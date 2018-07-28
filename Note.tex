@@ -1,0 +1,121 @@
+
+%\documentclass[a4paper, titlepage]{report}
+\documentclass[ALICE,manyauthors]{cernphprep}
+
+%\usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{lineno}
+\usepackage{amsfonts}
+\usepackage{makeidx}
+\usepackage{color}
+\pagestyle{headings}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{hyperref}   % creates links to references, chapters etc and a separated table of contents in the .pdf file
+
+%%%
+%%% Alias
+%%%
+\newcommand{\pp}{p-p}
+\newcommand{\sqrts}{\sqrt{s}}
+\newcommand{\sqrtsNN}{\sqrt{s_{\rm \scriptscriptstyle NN}}}
+\newcommand{\lsim}{\,{\buildrel < \over {_\sim}}\,}
+\newcommand{\gsim}{\,{\buildrel > \over {_\sim}}\,}
+\newcommand{\av}[1]{\left\langle #1 \right\rangle}
+\newcommand{\eV}{\mathrm{eV}}
+\newcommand{\keV}{\mathrm{keV}}
+\newcommand{\MeV}{\mathrm{MeV}}
+\newcommand{\GeV}{\mathrm{GeV}}
+\newcommand{\TeV}{\mathrm{TeV}}
+\newcommand{\ev}{\mathrm{eV}}
+\newcommand{\kev}{\mathrm{keV}}
+\newcommand{\mev}{\mathrm{MeV}}
+\newcommand{\gev}{\mathrm{GeV}}
+\newcommand{\tev}{\mathrm{TeV}}
+\newcommand{\fm}{\mathrm{fm}}
+\newcommand{\mm}{\mathrm{mm}}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\m}{\mathrm{m}}
+\newcommand{\mum}{\mathrm{\mu m}}
+\newcommand{\s}{\mathrm{s}}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\ns}{\mathrm{ns}}
+\newcommand{\mrad}{\mathrm{mrad}}
+\newcommand{\mb}{\mathrm{mb}}
+\newcommand{\mub}{\mathrm{\mu b}}
+\newcommand{\T}{\mathrm{T}}
+\newcommand{\PbPb}{\mbox{Pb--Pb}}
+\newcommand{\Npart}{N_{\rm part}}
+\newcommand{\Ncoll}{N_{\rm coll}}
+\newcommand{\Raa}{R_{\rm AA}}
+\newcommand{\RAA}{R_{\rm AA}}
+\newcommand{\TAA}{T_{\rm AA}}
+\newcommand{\RCP}{R_{\rm CP}}
+\newcommand{\pt}{p_{\rm T}}
+\newcommand{\dNdy}{{\rm d}N_{ch}/{\rm d}y}
+\newcommand{\momwin}{[$p$, $p$+$\Delta$ $p$]}
+\newcommand{\DtoKpi}{{\rm D^0\to K^-\pi^+}}
+\newcommand{\DtoKpipi}{{\rm D^+\to K^-\pi^+\pi^+}}
+\newcommand{\DstartoDpi}{{\rm D^{*+}\to D^0\pi^+}}
+\newcommand{\Dzero}{{\rm D^0}}
+\newcommand{\Dstar}{{\rm D^{*+}}}
+\newcommand{\Dplus}{{\rm D^+}}
+\newcommand{\nbinv}{{\rm nb^{-1}}}
+\newcommand{\decleng}{{\rm L}_{xyz}}
+\newcommand{\dEdx}{{\rm d}E/{\rm d}x}
+\newcommand{\mufac}{\mu_{\rm F}}
+\newcommand{\muren}{\mu_{\rm R}}
+\newcommand{\fprompt}{f_{\rm prompt}}
+%%%
+%%% end Alias
+%%%
+
+\begin{document}
+\begin{titlepage}
+
+
+%\PHnumber{ALICE-2011-XYZ}               
+\PHdate{\today}              
+
+\title{D-hadron correlations  in pp collisions at $\sqrt{s_\mathrm{NN}}$ = 5.02 TeV}
+
+\Collaboration{F. Colamaria, S. Kumar, M. Mazzilli}%
+
+\ShortAuthor{DRAFT \today, FOR INTERNAL USE ONLY}
+\ShortTitle{D-hadron correlations}
+
+\input{./Sections/Abstract/Abstract.tex}
+
+\end{titlepage}
+
+\linenumbers
+\tableofcontents
+
+\newpage
+\section{Introduction and Motivation}
+\input{./Sections/1Introduction/Introduction_Motivation.tex}
+
+\newpage
+%\section{Data/Monte Carlo samples and event selection}
+%\input{./Sections/2Data_Sample/Data_Sample.tex}
+
+\newpage
+%\section{Analysis strategy}
+%\input{./Sections/3Analysis_Strategy/Analysis_Strategy.tex}
+
+\newpage
+%\section{Systematic uncertainties on $\Delta\varphi$ correlation distributions}
+%\input{./Sections/4Systematic/SysUnc_AnalConst.tex}
+
+\newpage
+%\section{Results}
+%\input{./Sections/5Results/Results.tex}
+\newpage
+\section{Bibliography}
+\input{./Sections/8Bibliography/Bibliography.tex}
+\end{document}
