@@ -1,2 +1,30 @@
 \BOOKMARK [1][-]{section.1}{Introduction and Motivation}{}% 1
-\BOOKMARK [1][-]{section.2}{Bibliography}{}% 2
+\BOOKMARK [1][-]{section.2}{Data/Monte Carlo samples and event selection}{}% 2
+\BOOKMARK [1][-]{section.3}{Analysis strategy}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Mass plots and cut optimization}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Code used for the analysis}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Further details on corrections}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Event Mixing}{subsection.3.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Tracking and D-meson trigger efficiency}{subsection.3.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Correction for bias on B to D decay topologies}{subsection.3.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Secondary track contamination}{subsection.3.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Beauty feed-down}{subsection.3.3}% 11
+\BOOKMARK [1][-]{section.4}{Systematic uncertainties on \040correlation distributions}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Uncertainty on S and B extraction}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Uncertainty on background correlation shape}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Uncertainty on D-meson cut stability}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.4}{Uncertainty on tracking efficiency evaluation}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.5}{Uncertainty on secondary particle contamination}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.6}{Uncertainty on feed-down subtraction}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.7}{Uncertainty on correction for the bias on B to D decay topologies}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.8}{Summary table}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Results}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Comparing the three D meson correlation distributions}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{Average of D0, D+ and D*+ results}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.3}{Fit observable pT trends and uncertainties}{section.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Results for near-side yield and width, away-side yield and width, and baseline}{subsection.5.3}% 25
+\BOOKMARK [2][-]{subsection.5.4}{Comparison of 2016 p-Pb and 2013 p-Pb results}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.5}{Comparison of 2016 p-Pb and 2010 pp results}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.6}{Comparison of 2016 p-Pb and model expectations}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.7}{Planned results for SQM approvals}{section.5}% 29
+\BOOKMARK [1][-]{section.6}{Bibliography}{}% 30
