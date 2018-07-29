@@ -1,27 +1,29 @@
-The data used for the analyses were the AOD samples of the following four datasets: LHC16q$\_$FAST, LHC16q$\_$CENT$\_$woSDD, LHC16t$\_$FAST, LHC16t$\_$CENT$\_$woSDD. The reason for choosing these data samples (in particular, those without the drifts for the CENT cluster) is explained later on, in this section. It was verified, by looking at D-meson and associated charged track $\eta$ and $\varphi$ distributions, and at the mixed-event correlation distributions for each subsamples, that no visible differences is present for the four periods, hence it was possible to perform the analysis directly on the merged samples without any bias.
+The data used for the analyses were the AOD samples of the following four datasets:  	LHC17p$\_$pass1$\_$FAST, LHC17p$\_$pass1$\_$CENT$\_$woSDD, LHC17q$\_$pass1$\_$FAST and LHC17q$\_$pass1$\_$CENT$\_$woSDD . The reason for choosing these data samples (in particular, those without the drifts for the CENT cluster) is explained later on, in this section. It was verified, by looking at D-meson and associated charged track $\eta$ and $\varphi$ distributions, and at the mixed-event correlation distributions for each subsamples, that no visible differences is present for the four periods, hence it was possible to perform the analysis directly on the merged samples without any bias.
 
 The Monte Carlo productions adopted for this study were:
  \begin{enumerate}
- \item LHC17d2a$\_$fast$\_$new, a HIJING production with enrichment of heavy quarks (charm and beauty) and their decay products in each of the event, performed by PYTHIA6 with Perugia2011 tune, and with forced hadronic decays of the charmed hadrons. This production was used for D-meson efficiency evaluation, purity estimation and Monte Carlo closure test.
- \item LHC17f2b$\_$cent$\_$woSDD and LHC17f2b$\_$fast, minimum-bias samples produced with DPMJET generator, are used for the evaluation of the tracking efficiencies.
+ \item LHC18a4a2$\_$fast, a HIJING production with enrichment of heavy quarks (charm and beauty) and their decay products in each of the event, performed by PYTHIA6 with Perugia2011 tune, and with forced hadronic decays of the charmed hadrons. This production was used for D-meson efficiency evaluation, purity estimation and Monte Carlo closure test.
+ \item LHC17l3b$\_$fast, minimum-bias samples produced with DPMJET generator, are used for the evaluation of the tracking efficiencies.
 \end{enumerate}
 
 Table 1 shows the list of runs used for the analysis, for each of the data taking periods, and of the Monte Carlo productions used to evaluate the corrections:
 
 % Systematic table
 \begin{table}[h]
-\begin{tabular}{ p{1.2cm} | p{4.2cm} |  p{7cm} |  p{1.2cm}}
+\begin{tabular}{ p{1.0cm} | p{4.9cm} |  p{6.6cm} |  p{1.2cm}}
 {\normalsize \textbf {Type}} &       {\normalsize \textbf {Production}} &       {\normalsize \textbf {Run list}} & {\normalsize \textbf {nEvents}} \\
 \\ \hline
-Monte-Carlo & LHC17d2a$\_$fast$\_$new (c/b enriched), LHC17f2b$\_$fast (MB), LHC17f2b$\_$cent$\_$woSDD (MB) &267166, 267165, 267164, 267163, 265525, 265521, 265501, 265500, 265499, 265435, 265427, 265426, 265425, 265424, 265422, 265421, 265420, 265419, 265388, 265387, 265385, 265384, 265383, 265381, 265378, 265377, 265344, 265343, 265342, 265339, 265338, 265336, 265335, 265334, 265332, 265309 = \textbf{[36 runs]} & 50M\\
+Monte-Carlo & LHC18a4a2$\_$fast (c/b enriched) [GEANT3] &282343, 282342, 282341, 282340, 282314, 282313, 282312, 282309, 282307, 282306, 282305, 282304, 282303, 282302, 282247, 282230, 282229, 282227, 282224, 282206, 282189, 282147, 282146, 282127, 282126, 282125, 282123, 282122, 282120, 282119, 282118, 282099, 282098, 282078, 282051, 282050, 282031, 282025, 282021, 282016, 282008,282367, 282366, 282365 $~~~~~~~~~~~~~~~~$ = \textbf{[44 runs]} & 23M\\
+
+& LHC17l3b$\_$fast (Minimum Bias sample) [GEANT3] &282008, 282016, 282021, 282025, 282031, 282050, 282051, 282078, 282098, 282099, 282118, 282119, 282120, 282122, 282123, 282125, 282126, 282127, 282146, 282147, 282189, 282206, 282224, 282227, 282229, 282230, 282247, 282302, 282303, 282304, 282305, 282306, 282307, 282309, 282312, 282313, 282314, 282340, 282341, 282342, 282343, 282365, 282366, 282367 $~~~~~~~~~~~~~~~~$ = \textbf{[44 runs]} & 23M\\
 \\ \hline
 
-\multirow{7}{*}{} Data&LHC16q, pass1$\_$CENT$\_$woSDD & 265525, 265521, 265501, 265500, 265499, 265435, 265427, 265426, 265425, 265424, 265422, 265421, 265420, 265419, 265388, 265387, 265385, 265384, 265383, 265381, 265378, 265377, 265344, 265343, 265342, 265339, 265338, 265336, 265335, 265334, 265332, 265309 = \textbf{[32 runs]}& 261M total\\
-                  &LHC16q, pass1$\_$FAST &265525, 265521, 265501, 265500, 265499, 265435, 265427, 265426, 265425, 265424, 265422, 265421, 265420, 265419, 265388, 265387, 265385, 265384, 265383, 265381, 265378, 265377, 265344, 265343, 265342, 265339, 265338, 265336, 265335, 265334, 265332, 265309 = \textbf{[32 runs]} & 260M \\
+\multirow{7}{*}{} Data& LHC17p$\_$pass1$\_$FAST & 282343, 282342, 282341, 282340, 282314, 282313, 282312, 282309, 282307, 282306, 282305, 282304, 282303, 282302, 282247, 282230, 282229, 282227, 282224, 282206, 282189, 282147, 282146, 282127, 282126, 282125, 282123, 282122, 282120, 282119, 282118, 282099, 282098, 282078, 282051, 282050, 282031, 282025, 282021, 282016, 282008  = \textbf{[41 runs]}& 985M total\\
+                  & LHC17p$\_$pass1$\_$CENT$\_$woSDD &282343, 282342, 282341, 282340, 282314, 282313, 282312, 282309, 282307, 282306, 282305, 282304, 282303, 282302, 282247, 282230, 282229, 282227, 282224, 282206, 282189, 282147, 282146, 282127, 282126, 282125, 282123, 282122, 282120, 282119, 282118, 282099, 282098, 282078, 282051, 282050, 282031, 282030, 282025, 282021, 282016, 282008  = \textbf{[42 runs]} &  \\
 % \\ \hline
- & LHC16t, pass1$\_$CENT$\_$woSDD & 267166, 267165, 267164, 267163 = \textbf{[4 runs]} & 40M \\
+ & LHC17q$\_$pass1$\_$FAST & 282367, 282366, 282365  = \textbf{[3 runs]} &  \\
 % \\ \hline
-  & LHC16t, pass1$\_$FAST & 267166, 267165, 267164, 267163 = \textbf{[4 runs]} & 41M \\
+  & LHC17q$\_$pass1$\_$CENT$\_$woSDD& 282367, 282366, 282365  = \textbf{[3 runs]} & \\
  \hline \hline
 \label{tab:Sample}
 \end{tabular}
