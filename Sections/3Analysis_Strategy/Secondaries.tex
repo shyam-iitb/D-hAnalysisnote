@@ -1,10 +1,10 @@
 \label{secondaries}
 The secondary tracks inside the associated track sample, due to interaction of primary track with the detector material or to decays of strange hadrons, are mostly removed by the DCA cuts applied during the cut selection phase (DCA($xy$) $<$ 1 cm, DCA($z$) $<$ 1 cm).
 Anyway, a small fraction of secondary tracks survives this cut, and the data correlation distributions have to be corrected for this residual contamination.
-The fraction of surviving secondary tracks is evaluated via a study on the LHC17d2a$\_$fast$\_$new sample, by counting the number of tracks accepted by the selection whose corresponding generated-level track doesn't satisfy the IsPhysicalPrimary() call, and dividing this number by the total number of accepted tracks.
+The fraction of surviving secondary tracks is evaluated via a study on the LHC18a4a2$\_$fast$ sample, by counting the number of tracks accepted by the selection whose corresponding generated-level track doesn't satisfy the IsPhysicalPrimary() call, and dividing this number by the total number of accepted tracks.
 The outcome of the check is reported in Figure \ref{fig:secnumber}. As it's visible, no more than 5\% secondary tracks pass the selection. Moreover, the fraction of residual secondary tracks is flat along the $\Delta\varphi$ axis, as shown, for exemplary $\pt$ regions, in Figure \ref{fig:secdPhi}, where the inhomogeneities are always below 1\%.
 For this reason, it is possible to directly scale the data correlation distributions by their purity fraction (i.e. 1 - secondary contamination). This is done with an associated $\pt$ dependence, due to the increase of the purity with the track $\pt$, while the purity fraction is taken flat versus the D-meson $\pt$.
-The purity values that were choosen are the following:
+The purity values that were choosen are the following (NOT FINAL):
 \begin{itemize}
   \item $\pt$(assoc) $> 0.3$ $\gev/c$ : 0.958
   \item $\pt$(assoc) $> 1$ $\gev/c$ : 0.973
@@ -52,7 +52,7 @@ It was also verified with the same Monte Carlo study that applying the DCA selec
 		\label{fig:primRej}	
 \end{figure}
 
-These studies were performed on an enriched Monte Carlo sample, which could not fully reproduce the relative abundancies of the species. Anyway, for events with a reconstructed D-meson, this bias is expected to be minor, and only these events are used in the data analysis. In any case, the percentages obtained from the study were found to be consistent within 1\% with the outcome of the studies for the p-Pb 2013 analysis, which reassures us on the full validity of these results.
+These studies were performed on an enriched Monte Carlo sample, which could not fully reproduce the relative abundancies of the species. Anyway, for events with a reconstructed D-meson, this bias is expected to be minor, and only these events are used in the data analysis. In any case, the percentages obtained from the study were found to be consistent within 1\%.
 
 \clearpage
 %\end{document}
