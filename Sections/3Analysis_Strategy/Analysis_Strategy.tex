@@ -10,19 +10,14 @@ The analysis is performed through the following steps:
 \underline {\bf D meson selection and signal extraction.}  For each single event, ``trigger" particles
 are defined as the selected  D meson candidates ($\Dzero$, $\Dplus$ and $\Dstar$)
 within a given $\pt^{\rm trig}$ range. The detection strategy for D mesons at central rapidity is
-the same performed for the analyses of the D-meson production at central rapidity~\cite{ALICEDmespp7Tev}, and also applied for the D-h analysis on 2010 pp and 2013 p-Pb samples~\cite{ALICEDhcorr}. It is based on the reconstruction of decay
+the same performed for the analyses of the D-meson production at central rapidity~\cite{ALICEDmespp7Tev}, and also applied for the D-h analysis on 2016 pp and 2016 p-Pb samples (\cite{Notepp}, \cite{NotepPb}). It is based on the reconstruction of decay
 vertices displayed from the primary vertex by a few hundred $\mu$m and on the identification of the decay-particle species.
-The identification of the charged kaon and pion in the TPC and TOF
-detectors is also used, to further reduce the background at low $\pt$.  An
-invariant-mass analysis is then used to extract the raw signal yield, using
-the same fit functions described in~\cite{ALICEDhcorr}.
+The identification of the charged kaon and pion in the TPC and TOF detectors is also used, to further reduce the background at low $\pt$.  An invariant-mass analysis is then used to extract the raw signal yield, using the same fit functions described in~\cite{ALICEDhcorr}.
 The D mesons are selected in the rapidity range varying from $|y|<0.5$ at low $\pt$ to $|y|<0.8$ for $\pt>5~\gev/c$. %The final results are corrected to have D mesons within $|y|<0.5$.
 
 \item
 \underline{\bf Correlation of D candidates with associated tracks.}
-Particle pairs are formed by correlating each trigger particle with
-the charged primary particles passing the track selection (excluding those coming from the decay of the D-meson candidate) in a specified $p^{assoc}_{T}$
-interval (which can overlap with the $\pt^{\rm trig}$ range) and in the pseudo-rapidity range $|\eta|<0.8$. For the $\Dzero$ meson, also the low-momentum pion tracks from feed-down of $\Dstar$ mesons are removed via 3$\sigma$ invariant mass cut on the $M(K\pi\pi)-M(K\pi)$ difference. This because these soft pion are not related to the charm quark fragmentation chain.
+Particle pairs are formed by correlating each trigger particle with the charged primary particles passing the track selection (excluding those coming from the decay of the D-meson candidate) in a specified $p^{assoc}_{T}$ interval (which can overlap with the $\pt^{\rm trig}$ range) and in the pseudo-rapidity range $|\eta|<0.8$. For the $\Dzero$ meson, also the low-momentum pion tracks from feed-down of $\Dstar$ mesons are removed via 3$\sigma$ invariant mass cut on the $M(K\pi\pi)-M(K\pi)$ difference. This because these soft pion are not related to the charm quark fragmentation chain.
 For D meson candidates in the invariant mass signal region, defined by a $\pm$ 2$\sigma$ interval around the D meson mass peak, the azimuthal angle difference $\varphi^{\rm assoc}-\varphi^{\rm trigg}\equiv\Delta\varphi$
 and the pseudorapidity difference $\eta^{\rm assoc}-\eta^{\rm trig}\equiv\Delta \eta$ are evaluated and stored to build two-dimensional correlation distribution. % in a multi-dimensional histogram.
 
@@ -52,11 +47,9 @@ Further details on the mixed-event correction are provided in the next section.
 The invariant mass signal region also includes background D-meson candidates. Their contribution to the
 raw correlation distribution is subtracted as follows. For each $\pt$ bin, the mean and the sigma of the
 invariant mass spectrum are extracted. For $\Dzero$ and $\Dplus$, a ``background'' region is defined in the sidebands of the mass
-distribution as the interval $4 ~ \gev/c^2<|m-m^{\rm pdg}|<8 ~ \gev/c^2$ (for the $\Dstar$ meson, only the right sideband is used). The angular correlation distribution
-for background candidates in this region is extracted and normalized with respect to the background in the signal region
-estimated from the mass fit. This normalized background correlation distribution is then subtracted from the
+distribution as the interval $4 ~ \gev/c^2<|m-m^{\rm pdg}|<8 ~ \gev/c^2$ (for the $\Dstar$ meson, only the right sideband is used). The angular correlation distribution for background candidates in this region is extracted and normalized with respect to the background in the signal region estimated from the mass fit. This normalized background correlation distribution is then subtracted from the
 raw signal one to obtain the signal correlation distribution. The normalization factor is the ratio of the number of background candidates under the signal peak (obtained by integrating the background of the fit function within the signal region) over the number of background candidates in the sidebands (obtained via bin-counting in the sideband region).
-An example of the signal region, sideband and sideband-subtracted 1D correlation distributions (along $\Delta\varphi$ is shown in figure \ref{signReg}, together with the comparison of the three distributions after the normalization to the number of triggers.
+An example of the signal region, sideband and sideband-subtracted 1D correlation distributions (along $\Delta\varphi$) is shown in figure \ref{signReg}, together with the comparison of the three distributions after the normalization to the number of triggers.
 
 \begin{figure}[h]
 \centering
@@ -69,8 +62,7 @@ background-subtracted per-trigger normalized correlation distribution (black).}
 
 \item
 \underline{\bf Correction for D meson efficiency and associated track efficiency.}
-After filling the signal and background correlation distributions, it is necessary to take into account also for the correlations with tracks, those are not reconstructed, or not passing the quality selection due to poor reconstruction. In the same way, the loss of D-mesons which are not reconstructed, or do not pass the selection, impacts the correlation distribution shape. Hence, each pair is weighted by the
-inverse of the product of the associated track and D meson reconstruction efficiency, $\epsilon_{trk}$ and $\epsilon_{trig}$. Further details are provided later on in this section.
+After filling the signal and background correlation distributions, it is necessary to take into account also for the correlations with tracks, those are not reconstructed, or not passing the quality selection due to poor reconstruction. In the same way, the loss of D-mesons which are not reconstructed, or do not pass the selection, impacts the correlation distribution shape. Hence, each pair is weighted by the inverse of the product of the associated track and D meson reconstruction efficiency, $\epsilon_{trk}$ and $\epsilon_{trig}$. Further details are provided later on in this section.
 
 \item
 \underline{\bf Projection in $\Delta\varphi$.}
@@ -82,13 +74,12 @@ As the difference in the azimuthal angle is periodic ($\Delta \varphi = 0 = 2\pi
 \item
 \underline{\bf Correction for the contamination of secondary particles}
 The DCA to primary vertex cut, applied during the associated track selection, has the role of removing the secondary particles from the associated track sample.
-Secondary particles are indeed produced either from long-lived strange hadrons or from interaction of particles with the detector material. A residual contamination from secondary tracks is hence expected in the correlation distributions. This contamination is estimated from Monte Carlo simulation
-based on Pythia as described more in detail in the next section. The background-subtracted
+Secondary particles are indeed produced either from long-lived strange hadrons or from interaction of particles with the detector material. A residual contamination from secondary tracks is hence expected in the correlation distributions. This contamination is estimated from Monte Carlo simulation based on Pythia as described more in detail in the next section. The background-subtracted
 event-mixing corrected correlations are multiplied by a purity factor to encounter this contribution.
 
 \item
 \underline{\bf Correction for bias on B to D decay topologies}
-The presence of the topological cuts for the D-meson selection indirecly induce a bias on the topology of the B to D decay topologies, favouring cases with a small opening angle between the D-meson and the other tracks from the B decay. This affects the feed-down component of the data correlation distributions. This effect is corrected for with a procedure described in the subsection \ref{MCclosure}. Note that this correction is a novelty with respect to the previous analyses, where only a quite conservative systematic uncertainty was applied to take into account this effect.
+The presence of the topological cuts for the D-meson selection indirecly induce a bias on the topology of the B to D decay topologies, favouring cases with a small opening angle between the D-meson and the other tracks from the B decay. This affects the feed-down component of the data correlation distributions. This effect is corrected for with a procedure described in the subsection \ref{MCclosure}. %Note that this correction is a novelty with respect to the previous analyses, where only a quite conservative systematic uncertainty was applied to take into account this effect.
 
 \item
 \underline{\bf Correction for feed-down of D meson from b-hadron decay}
@@ -97,12 +88,7 @@ enhances the fraction of reconstructed D mesons coming from the decay of a b-had
 
 \item
 \underline{\bf Study of correlation properties.}
-The properties of the azimuthal correlation distribution are quantified by
-fitting the distribution with a function composed of two Gaussian functions, modelling the near and the away side peaks, and
-a constant term describing the baseline. The mean of the Gaussian are fixed at
-$\Delta\varphi = 0$ and $\Delta\varphi = \pi$. To accomplish the $2\pi$ periodicity
-of the $\Delta\varphi$ variable, the Gaussian functions
-are ``duplicated'' with mean at $\Delta\varphi = 2\pi$ and $\Delta\varphi = -\pi$.
+The properties of the azimuthal correlation distribution are quantified by fitting the distribution with a function composed of two Gaussian functions, modelling the near and the away side peaks, and a constant term describing the baseline. The mean of the Gaussian are fixed at $\Delta\varphi = 0$ and $\Delta\varphi = \pi$. To accomplish the $2\pi$ periodicity of the $\Delta\varphi$ variable, the Gaussian functions are ``duplicated'' with mean at $\Delta\varphi = 2\pi$ and $\Delta\varphi = -\pi$.
 The fitting procedure is described in details in Section \ref{results}.
 
 
@@ -164,8 +150,9 @@ The invariant mass distributions of $\Dzero$, $\Dstar$ and $\Dplus$ in the vario
 \label{fig:InvMassDp}
 \end{figure}
 
-For $\Dstar$, the standard D2H p-Pb cuts (for the 2013 cross section analysis, \cite{NoteD2HpPb}) were used. The same holds for the $\Dplus$, but with the addition of cuts on the normalized decay length in $xy$ plane and of the normalized difference between measured and expected daughter track impact parameters (topomatic cut).
-A particular cut optimization was instead performed for the $\Dzero$ meson. Twelve cut sets were tried, with the goal of increasing the S/B factor, in order to reduce fluctuations induced by the sideband subraction (the limiting factor for the analysis performance).
+For the $\Dstar$, 3 sets of cuts were compared (the 2016 p-Pb, 2016 pp and the standard D2H 2017 pp cuts). The best performance were obtained with 2016 p-Pb cuts in most of the $pt$ bin analysed. Indeed, despite the looser cuts applied from D2H allow to have higher signal, the p-Pb set of cuts assured a better S/B factor without loosing too much signal. This allows us to reduce fluctuations induced by the sideband subraction, that is the limiting factor for the analysis performance.
+The same holds for the $\Dplus$, but with the addition of cuts on the normalized decay length in $xy$ plane and of the normalized difference between measured and expected daughter track impact parameters (topomatic cut).
+A particular cut optimization was instead performed for the $\Dzero$ meson. Twelve cut sets were tried, with the goal of increasing the S/B factor, in order to reduce fluctuations induced by the sideband subraction as explained.
 In Figure \ref{fig:cutoptD0} the $\Dzero$-h correlation distributions are shown for the different cut sets, in exemplary kinematic regions (left column), together with the bin-by-bin relative statistical uncertainty on the data points (right column). The best cut set (option G) was defined from the standard cuts used for the p-Pb 2013 cross section analysis, with a tightened selection on the cosine of the pointing angle, and with the addition of a cut on the normalized decay length in $xy$ plane and of a selection on the normalized difference between measured and expected daughter track impact parameters (topomatic cut).
 
 \begin{figure}[!htp]
@@ -186,7 +173,7 @@ The code used for D meson-hadron correlation analysis is fully committed in AliP
 \$ALICE\_ROOT/PWGHF/correlationHF/.  The  D meson specific classes where the aforementioned steps are carried out are
 AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and AliAnalysisTaskDplusCorrelations. The classes which are common to the D meson specific analysis which includes the associated particle cuts and the correlation observables are AliHFAssociatedTrackCuts, AliHFCorrelator, AliHFOfflineCorrelator, AliReducedParticle and AliDhCorrelationExtraction. Several additional classes and macros in the same folder deal with the correction steps.
 
-The final results presented here are extracted are the HFCJ pPb (n. 88) train runs 290-293 (for $\Dzero$ and $\Dplus$) and 286-289 (for $\Dstar$).
+%The final results presented here are extracted are the HFCJ pPb (n. 88) train runs 290-293 (for $\Dzero$ and $\Dplus$) and 286-289 (for $\Dstar$).
 
 \subsection{Further details on corrections}
 \subsubsection{Event Mixing}
