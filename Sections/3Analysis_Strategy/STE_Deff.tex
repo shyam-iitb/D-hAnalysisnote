@@ -1,8 +1,8 @@
 {\bf \normalsize (i) Tracking efficiency} - The tracking efficiency was calculated by obtaining the ratio between the yield at the reconstructed level and generated level, for a defined ``type" of particles (in our case non-identified particles) and it is estimated differentially in p$_T$, $\eta$, and z$_{vtx}$ of the charged particles.\\
 
-Tracking efficiency maps were produced as TH3D histograms (p$_T$, $\eta$, z$_{vtx}$) obtained from MC analysis on the minimum-bias samples LHC17f2b$\_$fast and LHC17f2b$\_$cent$\_$woSDD, considering only primary pions, kaons, protons, electrons and muons, and applying at reconstructed level the track selections (summarized in Table.~\ref{table:effCuts}). These efficiency maps were used in the analysis tasks to extract single track efficiencies; each correlation pairs found in the data analysis was inserted in correlation plots with a weight of {\bf 1/efficiency value}. 
-As a cross-check, the tracking efficiency was evaluated, with the same criteria, also on the LHC17f2a$\_$fast and LHC17f2a$\_$cent$\_$woSDD samples, which were produced with EPOS-LHC generator instead of DPMJET. Compatibility within 1\% between the efficiency values on the two samples was found.
-The 1D ($\pt$ dependence) tracking efficiency, evaluated on f2b samples (blue) and on f2a samples (red) are shown in Fig.~\ref{fig:trackeff}, as well as the ratio of f2b over f2a efficiencies.
+Tracking efficiency maps were produced as TH3D histograms (p$_T$, $\eta$, z$_{vtx}$) obtained from MC analysis on the minimum-bias samples LHC17l3b$\_$fast and LHC17l3b$\_$cent$\_$woSDD anchored to LHC17p,q data samples, considering only primary pions, kaons, protons, electrons and muons, and applying at reconstructed level the track selections (summarized in Table.~\ref{table:effCuts}). These efficiency maps were used in the analysis tasks to extract single track efficiencies; each correlation pairs found in the data analysis was inserted in correlation plots with a weight of {\bf 1/efficiency value}. 
+%As a cross-check, the tracking efficiency was evaluated, with the same criteria, also on the LHC17f2a$\_$fast and LHC17f2a$\_$cent$\_$woSDD samples, which were produced with EPOS-LHC generator instead of DPMJET. Compatibility within 1\% between the efficiency values on the two samples was found.
+The 1D ($\pt$ dependence) tracking efficiency for all the five species as well as the tracking efficiency specie by specie are shown in Fig.~\ref{fig:trackeff}.
 
 \begin{figure}[h]
 	\centering
@@ -81,10 +81,9 @@ Details of cuts at event level and particle/track selection at different steps a
 
 {\bf \large (ii) D meson efficiency} - Due to limited statistics, the correlation analysis is performed in quite wide $\pt$ bins and in each of them the reconstruction and selection efficiency of D mesons is not flat, in particular in the lower $\pt$ region. We correct for the $\pt$ dependence of the trigger efficiency within each p$_\mathrm{T}$-bin.
 
-This correction is applied online, by using a map of D meson efficiency as a function of $\pt$ and event multiplicity (in terms of SPD tracklets in $|\eta|<1$) extracted from the enriched Monte Carlo sample LHC17d2a$\_$fast$\_$new. The $\eta$ dependence was neglected due to the statistics of the available Monte Carlo sample, which rule out the possibility of performing a 3D study.
+This correction is applied online, by using a map of D meson efficiency as a function of $\pt$ and event multiplicity (in terms of SPD tracklets in $|\eta|<1$) extracted from the enriched Monte Carlo sample LHC18a4a2$\_$fast$. The $\eta$ dependence was neglected due to the statistics of the available Monte Carlo sample, which rule out the possibility of performing a 3D study.
 
-To properly count the number of trigger particles used to normalize the correlation distributions, $N_\text{trig}$, each D meson is weighted with the inverse of its efficiency
-in the invariant mass distribution. The main role of the correction for the D meson efficiency is to account for the $\pt$ dependence of the correlation distribution within a given D meson $\pt$ interval. Indeed, only the $\pt$ shape of the D meson efficiency within the correlation $\pt^{\rm trig}$ ranges is relevant while the average value
+To properly count the number of trigger particles used to normalize the correlation distributions, $N_\text{trig}$, each D meson is weighted with the inverse of its efficiency in the invariant mass distribution. The main role of the correction for the D meson efficiency is to account for the $\pt$ dependence of the correlation distribution within a given D meson $\pt$ interval. Indeed, only the $\pt$ shape of the D meson efficiency within the correlation $\pt^{\rm trig}$ ranges is relevant while the average value
 in the $\pt$ range is simplified due to the normalization of the correlation distribution to the number of trigger particles.
 
 Efficiency plots for $\Dzero$, $\Dplus$ and $\Dstar$ mesons are shown in Figs.~\ref{fig:dEffPrompt} and ~\ref{fig:dEffFD}.
@@ -129,11 +128,11 @@ Bottom panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (righ
 \end{figure}
 \clearpage
 
-It was observed that multiplicity dependence of the efficiency does not bias the extraction of the signal yield from the invariant mass distributions (which, as anticipated, are also weighted in the same manner). In addition, the multiplicity dependence of the efficiencies (shown for the $\Dzero$, in integrated $\pt$ range, in Fig. \ref{fig:DeffY}) is rather flat in the range 20-80 tracklets, where about 90\% of the reconstructed D-mesons are found, which explains why it has a negligible effect on the correlation distributions on this data sample.
-\begin{figure}[h]   %da B
-	\centering
-	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_Dzero_c_RefPtBins_Ydep_wLimAcc_Plot.png}
-\caption{Prompt $\Dzero$ meson efficiency as a function of multiplicity (SPD tracklet in $|\eta|<1$).}
-	\label{fig:DeffY}	
-\end{figure}
+%It was observed that multiplicity dependence of the efficiency does not bias the extraction of the signal yield from the invariant mass distributions (which, as anticipated, are also weighted in the same manner). In addition, the multiplicity dependence of the efficiencies (shown for the $\Dzero$, in integrated $\pt$ range, in Fig. \ref{fig:DeffY}) is rather flat in the range 20-80 tracklets, where about 90\% of the reconstructed D-mesons are found, which explains why it has a negligible effect on the correlation distributions on this data sample.
+%\begin{figure}[h]   %da B
+%	\centering
+%	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_Dzero_c_RefPtBins_Ydep_wLimAcc_Plot.png}
+%\caption{Prompt $\Dzero$ meson efficiency as a function of multiplicity (SPD tracklet in $|\eta|<1$).}
+%	\label{fig:DeffY}	
+%\end{figure}
 \clearpage 
