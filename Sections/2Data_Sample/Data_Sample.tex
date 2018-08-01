@@ -36,41 +36,6 @@ the detector pseudorapidity acceptances.
 Beam-gas events are removed by offline selections based on the timing information provided by the V0 and the Zero Degree Calorimeters, and the correlation between the number of hits and track segments in the SPD detector. This is automatically performed in the Physic Selection, a positive outcome of which is required during our event selection. The pile-up cuts for out-of-bunch pile-up protection are also invoked when calling the Physics Selection task.
 The minimum-bias trigger efficiency is 100\% for events with D mesons with $\pt > 1$ $\gev/c$. For the analyzed data samples, the probability of pile-up from collisions in the same bunch crossing is below 2\% per triggered event (in most of the runs, well below 1\%). Events in which more than one primary interaction vertex is reconstructed with the SPD detector (with minimum of 5 contributors, and a $z$ distance greater than 0.8 cm) are rejected, which effectively removes the impact of in-bunch pile-up events on the analysis. Out-of-bunch tracks are effectively rejected by the Physics Selection pile-up cuts, and also by the request of at least one point in the SPD, which has a very limited time acquisition window (300 ns). Indeed, though the default associated track selection requires a minimum of 2 points in the ITS, as it will be shown later on full compatibility of the corrected results with 2 and 3 minimum ITS clusters are obtained. For FAST and CENT$\_$woSDD samples, the latter case indirectly forces the presence of a point in the SPD.
 
-Since data collected during p-Pb 2016 data taking are distinguished into two categories - one including SDD detector (CENT$\_$wSDD sample) and the second one without the SDD in the reconstruction, or in the acquisition (CENT$\_$woSDD and FAST samples, respectively), a study of performance of the D-hadron correlation analysis with respect to the data samples employed has been carried out for $\Dstar$ and $\Dplus$ mesons (more sensitive to the presence of the SDD w.r.t. the $\Dzero$, due to their reconstruction from three decay tracks).
-
-For this reason, the D-hadron correlation distribution has been compared on LHC16q$\_$pass1$\_$CENT$\_$wSDD and LHC16q$\_$pass1$\_$CENT$\_$woSDD and the relative statistical uncertainty has been estimated in the two cases. The goal was to understand if it was better to use the choose FAST and CENT$\_$woSDD samples, as it was ultimately done (which have the same detector conditions, and can be simply merged and considered, in the analysis chain, as a unique sample), of instead to use FAST and CENT$\_$wSDD samples (with different detector conditions, and hence requiring to perform the analysis separately on the two data sample, applying different corrections).
-In particular, this study was crucial for the correlation analysis involving the $\Dstar$ meson, because the track reconstruction efficiency of the soft pion is $\approx 10\%$ higher employing also the SDD information.
-Figure \ref{wSSvswoSDD} shows the normalized azimuthal correlation distribution for low, mid and high $\pt$ for $\Dstar$ meson. Blue points are referred to the woSDD sample while red points represents wSDD data. Figure \ref{wSSvswoSDDuncertainty} shows the relative statistical uncentainty extracted from the azimuthal correlation distributions for the $\Dstar$ in different kinematic ranges.
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/AzimCorrDistr_Dstar_Canvas_PtIntBins2to3_PoolInt_thr0dot3to99dot0_Superimp.png}
-\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/AzimCorrDistr_Dstar_Canvas_PtIntBins4to6_PoolInt_thr0dot3to99dot0_Superimp.png}
-
-\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/AzimCorrDistr_Dstar_Canvas_PtIntBins7to9_PoolInt_thr0dot3to99dot0_Superimp.png}
-\caption{Normalized azimuthal correlation distribution of $\Dstar$ for low $\pt$ ($3 < \pt(\Dstar) < 5$ $\gev/c$) on the top panel, mid $\pt$ ($5 < \pt(\Dstar) < 8$ $\gev/c$) on the middle panel and high $\pt$ ($8 < \pt(\Dstar) < 16$ $\gev/c$) on the bottom panel with a $\pt$ threshold for associated tracks of $\pt(assoc) > 0.3$ $\gev/c$. Blue points are referred to the woSDD sample while red points represent wSDD data.}
-\label{wSSvswoSDD}
-\end{figure}
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/Uncertanty_AzimCorrDistr_Dstar_Canvas_PtIntBins2to3_PoolInt_thr0dot3to99dot0.png}
-\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/Uncertanty_AzimCorrDistr_Dstar_Canvas_PtIntBins4to6_PoolInt_thr0dot3to99dot0.png}
-
-\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/Uncertanty_AzimCorrDistr_Dstar_Canvas_PtIntBins7to9_PoolInt_thr0dot3to99dot0.png}
-\caption{Statistical uncertainty extracted from the azimuthal correlation distribution of $\Dstar$ with associated charged particles. Top panel: $3 < \pt(\Dstar) < 5$ $\gev/c$.
-Mid panel: $5 < \pt(\Dstar) < 8$ $\gev/c$. Bottom panel: $8 < \pt(\Dstar) < 16$ $\gev/c$.
-Blue line is referred to the woSDD sample while the red line represents wSDD data.}
-\label{wSSvswoSDDuncertainty}
-\end{figure}
-
-It can be observed that the data sample that includes the SDD information is characterized by $\approx 10-15\%$ more statistics in each $\pt$ ranges analyzed. This difference is related to the larger efficiency in track reconstruction with the wSDD sample - a larger number of tracks survives to the selection request of 3 points in the ITS, which is part of the selection requests applied on the previous D-h analysis.
-
-As a result, the wSDD sample is also affected by a slightly lower relative statistical uncertainty (about 12-15\%) due to several reasons: the larger tracking efficiency, the larger number of signal entries in the invariant mass distributions (again an effect of the larger tracking efficiency) and a slight increase of S/B, which reflects in a slight decrease of uncertainty from the side-band subtraction.
-It has also to be considered that, on the full sample including also the FAST cluster, the increase in performance would be further reduced.
-The overall statistical uncertainty difference resulting from the comparison is not enough to justify the implementation of two different analysis and two subsequent different corrections either for $\Dstar$ and $\Dplus$. 
-
-By using the same analogy, the pp data analysis also done in the similar way.
-In order to, to cope with the lower tracking efficiency w.r.t. 2013 data sample, after this study, it was decided to reduce the ITS request for the associated tracks from 3 (used on 2013 data) to 2 ITS clusters as default selection criterion.
+Since data collected during pp 2017 data taking are distinguished into two categories - one including SDD detector (CENT$\_$wSDD sample) and the second one without the SDD in the reconstruction, or in the acquisition (CENT$\_$woSDD and FAST samples, respectively), a study of performance of the D-hadron correlation analysis with respect to the data samples employed has been carried out on p-Pb 2016 data for $\Dstar$ and $\Dplus$ mesons (more sensitive to the presence of the SDD w.r.t. the $\Dzero$, due to their reconstruction from three decay tracks) refer to p-Pb 2016 analysis note. By using the same analogy, the pp data analysis also done on the similar data samples.
 
 
