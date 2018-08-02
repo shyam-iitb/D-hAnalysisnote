@@ -110,7 +110,6 @@ The invariant mass distributions of $\Dzero$, $\Dstar$ and $\Dplus$ in the vario
 
 \begin{figure}[!htp]
 \centering
-{\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins3to3.png}}
 {\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins4to5.png}}
 {\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins6to8.png}}
 \end{figure}
@@ -137,7 +136,6 @@ The invariant mass distributions of $\Dzero$, $\Dstar$ and $\Dplus$ in the vario
 
 \begin{figure}[h]
 \centering
-{\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins2to2.png}}
 {\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins3to4.png}}
 {\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins5to7.png}}
 \end{figure}
@@ -167,6 +165,24 @@ In Figure \ref{fig:cutoptD0} the $\Dzero$-h correlation distributions are shown 
 \caption{$\Dzero$-h correlation distributions with different cut options (left) and point-by-point relative statistical uncertainty (right) for $3< p_{T}^{\text{D}}< 5$ $\gev/c$ (top), $5< p_{T}^{\text{D}}< 8$ $\gev/c$ (middle), $8< p_{T}^{\text{D}}< 16$ $\gev/c$ (bottom), in all cases with associated track $\pt$ $> 0.3$ $\gev/c$.}
 \label{fig:cutoptD0}
 \end{figure}
+
+ \subsubsection{Extension to vey-low $\pt$ of D mesons}
+ 
+Thanks to the higher statistic of the 2017 pp data sample, we tried to enlarge our correlation studies to very-low $\pt$ of the trigger particle. Indeed, the figure \ref{fig:VeryLowPt} shows the good performance on the invariant mass extraction for all the 3 D-mesons with $2< p_{T}^{\text{D}}< 3$ $\gev/c$.
+\begin{figure}[!htp]
+\centering
+{\includegraphics[width=1\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins2to2.png}}
+{\includegraphics[width=1\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins3to3.png}}
+{\includegraphics[width=1\linewidth, height=5.6cm]{figures/DStar_pp/InvMassDistributions_Dstar_Bins2to3.png}}
+\caption{Invariant mass distribution of $\Dplus$ (top), $\Dzero$ (mid) and $\Dstar$ (bottom) corrected with efficiency for  $2< p_{T}^{\text{D}}< 3$ .}
+\label{fig:VeryLowPt}
+\end{figure}
+
+The extension of the analysis to this $\pt$ interval is of high interest in the jet structure characterizion. Indeed, this study allow us to investigate a kinematic region in which the trigger particle has compatible or even lower momenyum with respect to the associated particles. This give us the possibility to better understand the production processes. In fact, for example, at the Leading Order (LO) for $\pt (trig) \sim \pt(ass)$ we don't expect any peak on the near-side region. A peak could arise from Next-to-Leading-Order production process.
+
+Despite the good statistics, it wasn't enough to perform the correlation analysis. Indeed, the correlation distribution suffered of fluctuation expecially on the away-side region where most of the fit failed. 
+
+
 
 \subsection{Code used for the analysis}
 The code used for D meson-hadron correlation analysis is fully committed in AliPhysics. The analysis classes can be found in
