@@ -21,7 +21,7 @@ The multiplicity and z vertex position bins for the pools used in the p-Pb analy
 %(\ref{tab:em})
 
 In an ideal case, the mixed event distribution is expected to have a constant flat distribution as function of $\Delta\varphi$ and a triangular shaped distribution in $\Delta\eta$
-deriving from the limited $\eta$ acceptance of the detector. In case, instead of detector inefficient regions, or holes, in the same angular position for D meson and associated tracks, these structures produce an excess of correlations at $\Delta\varphi=0$ in the $\Delta\varphi$ distribution. The obtained distribution is used as a weight in each correlation bin, i.e, the corrected correlation distribution is calculated as follows:
+deriving from the limited $\eta$ acceptance of the detector. In case, instead, of detector inefficient regions, or holes, in the same angular position for D meson and associated tracks, these structures produce an excess of correlations at $\Delta\varphi=0$ in the $\Delta\varphi$ distribution, plus possibly other structures depending on the relative position of the inefficient regions and on their number. The mixed-event distribution is used as a weight in each correlation bin, i.e, the corrected correlation distribution is calculated as follows:
 \begin{equation}
 \label{eq:mixing}
 \frac{dN^{corr}\left(\Delta\varphi \Delta\eta\right)}{d\Delta\varphi d\Delta\eta} = \frac{\frac{dN^{SE}\left(\Delta\varphi \Delta\eta\right)}{d\Delta\varphi d\Delta\eta} }{\frac{dN^{ME}\left(\Delta\varphi \Delta\eta\right)}{d\Delta\varphi d\Delta\eta} }\frac{dN^{ME}\left(0,  0\right)}{d\Delta\varphi d\Delta\eta}
@@ -36,46 +36,18 @@ corrected with the relative distributions. An example of the mixed-event distrib
 
 \begin{figure}
 \centering
-{\includegraphics[width=1\linewidth]{figures/DStar_pp/InputCorr_Dstar_Canvas_pool1_pTbin7_thr0dot3to99dot0.png}}
- \caption{$\Dstar$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from  Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $8 < p_\mathrm{T}<16$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
+{\includegraphics[width=1\linewidth]{figures/Dzero/InputCorr_Dzero_Canvas_pool1_pTbin4_thr03to99.png}}
+ \caption{$\Dstar$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from pool1, for Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $3 < p_\mathrm{T}<5$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
 \label{fig:DStarME}
 \end{figure}
 
-\begin{comment}
 \begin{figure}
 \centering
-{\includegraphics[width=1\linewidth]{figures/Dzero/Example_SE_ME_D0_Deta12.png}}
- \caption{$\Dzero$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from  Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $8 < p_\mathrm{T}<16$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
-\label{fig:DzeroMElarge1}
-\end{figure}
-
-\begin{figure}
-\centering
-{\includegraphics[width=1\linewidth]{figures/Dzero/Example_SE_ME_D0_Deta14.png}}
- \caption{$\Dzero$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from  Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $8 < p_\mathrm{T}<16$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
-\label{fig:DzeroMElarge2}
-\end{figure}
-
-\begin{figure}
-\centering
-{\includegraphics[width=1\linewidth]{figures/Dzero/Example_SE_ME_D0_Deta16.png}}
- \caption{$\Dzero$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from  Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $8 < p_\mathrm{T}<16$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
-\label{fig:DzeroMElarge3}
-\end{figure}
-\end{comment}
-
-\begin{figure}
-\centering
-%{\includegraphics[width=0.9\linewidth, height = 7cm]{figures/Dzero/h2D_Dzero_Subtr_Canvas_PtIntBins4to5_PoolInt_thrdot3to99dot.png}}
-{\includegraphics[width=0.9\linewidth, height = 7cm]{figures/DStar_pp/h2D_Dstar_Subtr_Canvas_PtIntBins2to3_PoolInt_thr0dot3to99dot0}}
-%{\includegraphics[width=0.9\linewidth, height = 7cm]{figures/DplusPlotsweff/h2D_Dplus_Subtr_Canvas_PtIntBins8to12_PoolInt_thr0dot3to99dot0.png}}
-%\caption{Top: ($\Delta\varphi$, $\Delta\eta$) correlation distribution of $D^{0}$-h with $3 < \pt < 5$ GeV/c and associated track kinematic range: $0.3 < \pt < 1.0$ GeV/c
-Mid: ($\Delta\varphi$, $\Delta\eta$) correlation distribution of $D^{*+}$-h with $3 < \pt < 5$ GeV/c and associated track $\pt$ Threshold: $\pt > 0.3$ GeV/c
-%Bottom: ($\Delta\varphi$, $\Delta\eta$) correlation distribution of $D^{+}$-h with $8 < \pt < 16$ GeV/c and associated track $\pt$ threshold: $\pt > 0.3$ GeV/c. All the plots are shown after the mixed-event correction and the sideband subtraction.}
+{\includegraphics[width=0.9\linewidth, height = 7cm]{figures/Dzero/h2D_Dzero_Subtr_Canvas_PtIntBins9to11_PoolInt_thr1dotto99dot.png}}
+\caption{($\Delta\varphi$, $\Delta\eta$) correlation distribution of $D^{*+}$-h with $8 < \pt < 16$ GeV/c and associated track $\pt$ Threshold: $\pt > 0.3$ GeV/c, after the mixed-event correction.}
 \label{fig:Dsubtr2D}
-
 \end{figure}
 \clearpage
 %\end{document}
 
- 
+

@@ -3,14 +3,13 @@ To verify the consistency of the analysis chain and of the corrections applied t
 
 On the Monte Carlo enriched with charm and beauty quarks (LHC18a4a2$\_$fast, with GEANT3), the correlation analysis was performed both at kinematic level and at reconstructed level. At kinematic level, only acceptance cuts were applied on the D mesons and the associated particles, using the Monte Carlo information for the identification of the D mesons and the hadrons in the event and rejecting the non-primary particles. At reconstructed level, the analysis was performed as if it were executed on data, applying the event selection, the acceptance cuts for D mesons and the associated particles, selecting the D meson candidates with filtering cuts on their daughters, topological cuts and PID selection, and then keeping only the true D mesons by matching with the Monte Carlo truth; non-primary particles were rejected by means of the DCA selection. Event mixing correction was applied both at reconstructed and at kinematic level, where it takes into account just the effects of the acceptance cuts. In addition, at reconstructed level, the efficiency corrections for D mesons and associated tracks were also applied.
 
+The consistency check was performed to verify whether, after having applied all the corrections to the azimuthal correlation plots at reconstructed level, the results were compatible with the ones at kinematic level. Hence, the ratios of fully corrected reconstructed plots over kinematic plots were evaluated in all the $\Dzero$ $p_\text{T}$ bins and for the various $p_\text{T}$ thresholds for the associated tracks, separating the contributions for the different origins of particles and triggers. The ratios, shown in Figure~\ref{fig:MC_Ratios} for exemplary kinematic regions (covering anyway the full span of the measurement), denote a good compatibility with 1, within the uncertainties, of the average reconstructed over generated ratios, in particular for the all D-non HF track case (blue curves), apart from small downward deviations at low $\pt$, which will be cured with a 2-3\% asymmetric systematic uncertainty, as also previously done in the pp 2010 and p--Pnb 2013 analyses.
 
-The consistency check was performed to verify whether, after having applied all the corrections to the azimuthal correlation plots at reconstructed level, the results were compatible with the ones at kinematic level. Hence, the ratios of fully corrected reconstructed plots over kinematic plots were evaluated in all the $\Dzero$ $p_\text{T}$ bins and for the various $p_\text{T}$ thresholds for the associated tracks, separating the contributions for the different origins of particles and triggers. The ratios, shown in Figure~\ref{fig:MC_Ratios}, denote a good compatibility with 1, within the uncertainties, with the only exception being due to some structures in the near side region for the beauty origin case.
+The major exceptions to the previous conclusion are clearly the structures in the near side region for the beauty origin case.
 It was verified that these structures are induced by our topological selection for the D mesons. Indeed, in cases in which the D meson triggers come from B hadrons, applying the topological cuts (especially the cosine of the pointing angle) tends to favour cases with a small angular opening between the products of the B hadron decay (i.e. the D meson trigger itself and other particles), with respect to cases where the B decay particles are less collinear.
 
 \begin{figure}
 \centering
-{\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins3to3_PoolInt_thr03to1.png}}
-{\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins3to3_PoolInt_thr1to99.png}} \\
 {\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins4to5_PoolInt_thr03to1.png}}
 {\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins4to5_PoolInt_thr1to99.png}} \\
 
@@ -18,12 +17,15 @@ It was verified that these structures are induced by our topological selection f
 {\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins6to8_PoolInt_thr1to99.png}} \\
 
 {\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to1.png}}
-{\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1to99.png}}
+{\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1to99.png}} \\
+
+{\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins12to13_PoolInt_thr03to1.png}}
+{\includegraphics[width=.48\linewidth]{figures/MC_closure/MCClosure_Dzero_Canvas_PtIntBins12to13_PoolInt_thr1to99.png}}
 \end{figure}
 \begin{figure}
 \centering
 \caption{Ratios of fully corrected azimuthal correlation plots at reconstructed level over azimuthal correlation plots at kinematic level, in the two $\Dzero$ $p_\text{T}$ bins, for the different associated $p_\text{T}$ ranges. Black points: All $\Dzero$-all hadrons, normalized by all $\Dzero$ triggers; light red points: $\Dzero$ from c-hadrons from c, normalized by c-$\Dzero$ triggers; dark red points: $\Dzero$ from c-all hadrons, normalized by c-$\Dzero$ triggers; light green points: $\Dzero$ from b-hadrons from b, normalized by b-$\Dzero$ triggers; dark green points: $\Dzero$ from b-all hadrons, normalized by b-$\Dzero$ triggers; blue points: All $\Dzero$-hadrons from light quarks, normalized by all $\Dzero$ triggers.
-The panels show the ranges: $2 < \pt$(D)$ < 3$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (1st row-left); $2 < \pt$(D)$ < 3$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (1st row-right); $3 < \pt$(D)$ < 5$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (2nd row-left); $3 < \pt$(D)$ < 5$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (2nd row-right);  $5 < \pt$(D)$ < 8$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (3rd row-left), $5 < \pt$(D)$ < 8$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (3rd row-right); $8 < \pt$(D)$ < 16$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (4th row-left), $8 < \pt$(D)$ < 16$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (4th row-right).}
+The panels show the ranges: $3 < \pt$(D)$ < 5$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (1st row-left); $3 < \pt$(D)$ < 5$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (1st row-right); $5 < \pt$(D)$ < 8$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (2nd row-left); $5 < \pt$(D)$ < 8$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (2nd row-right);  $8 < \pt$(D)$ < 16$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (3rd row-left), $8 < \pt$(D)$ < 16$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (3rd row-right); $16 < \pt$(D)$ < 24$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (4th row-left), $16 < \pt$(D)$ < 24$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (4th row-right).}
 \label{fig:MC_Ratios}
 \end{figure}
 
@@ -43,10 +45,10 @@ Thus, the following equation is applied to get the corrected $C(\Delta\varphi)_{
 \begin{equation}
 C(\Delta\varphi)_{\rm corr} = C(\Delta\varphi)_{\rm raw} \cdot [\frac{{\rm c}\rightarrow{\rm D}|_{\rm amplit}}{{\rm (B+c)}\rightarrow{\rm D}|_{\rm amplit}} \cdot f_{\rm prompt} + \frac{{\rm B}\rightarrow{\rm D}|_{\rm amplit}}{{\rm (B+c)}\rightarrow{\rm D}|_{\rm amplit}} \cdot (1-f_{\rm prompt})\cdot\frac{1}{\bf modul}]
 \end{equation}
-where ${\rm (B+c)}\rightarrow{\rm D}|_{\rm amplit} = {\rm c}\rightarrow{\rm D}|_{\rm amplit} \cdot f_{\rm prompt} + {\rm B}\rightarrow{\rm D}|_{\rm amplit} \cdot (1-f_{\rm prompt})$, and where the two amplitudes are evaluated from the Monte Carlo distributions of Figure \ref{fig:MC_Reco} at reconstructed level (so, including the bias), and $\fprompt$ with the procedure described in \ref{feeddown}.
+where ${\rm (B+c)}\rightarrow{\rm D}|_{\rm amplit} = {\rm c}\rightarrow{\rm D}|_{\rm amplit} \cdot f_{\rm prompt} + {\rm B}\rightarrow{\rm D}|_{\rm amplit} \cdot (1-f_{\rm prompt})$, and where the two amplitudes are evaluated from the Monte Carlo distributions at reconstructed level (so, including the bias), and $\fprompt$ with the procedure described in \ref{BeautyFeedDownSection}.
 Applying the {\bf modul} factor to the beauty part of the data correlation distributions brings its value back to the generated level case, effectively removing the bias.
 The effect of the correction is a shift of the data points in the near-side region (in general, downward in the first and second points, the upward in the others). The maximum value of the shift is of about 5\%, at the centre of the near-side peak, for the lowest D-meson $\pt$ range ($3 < \pt < 5$ $\gev/c$ ) and the highest associated track $\pt$ range ($\pt > 3$ $\gev/c$ ). The typical values are instead of a couple of percentage points. The correction is zero in the highest D-meson $\pt$ range.
 To take into account for possible inaccuracies in the definition of the modulations, or in their rescaling, a systematic uncertainty is  applied on the corrected data points, with value $|C(\Delta\varphi)_{\rm corr} - C(\Delta\varphi)_{\rm raw}|/\sqrt(12)$, on each side of the data points affected by the bias (symmetric uncertainty).
- 
+
 \clearpage
 %\end{document}

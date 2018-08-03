@@ -1,5 +1,5 @@
 The analysis follows the same strategy one used in 2016 p-Pb and pp data samples (see published paper \cite{ALICEDhcorr} and analysis notes \cite{Notepp}, \cite{NotepPb}). Correlation pairs are formed by
-trigger particles (D mesons) reconstructed and selected in the following $\pt^{\rm trig}$ ranges: $3<\pt^{\rm trig}<5$ $\gev/c$, $5<\pt^{\rm trig}<8$ $\gev/c$, $8<\pt^{\rm trig}<16$ $\gev/c$, $16<\pt^{\rm trig}<24$ $\gev/c$ (the possibility of extending the analysis in $2<\pt^{\rm trig}<3$ was also exploited. Further details are furnished in the next paragraph). Associated particles (charged tracks) have been reconstructed in the following $\pt^{\rm assoc}$ regions: $\pt^{\rm assoc}>0.3$ $\gev/c$, $0.3<\pt^{\rm assoc}<1$ $\gev/c$, $1<\pt^{\rm assoc}<2$ $\gev/c$, $2<\pt^{\rm assoc}<3$ $\gev/c$, $\pt^{\rm assoc}>1$ $\gev/c$. In this analysis, the particle identification defines the trigger particle rather than a momentum cut and therefore the momentum range of the associated particles is not constrained by that of the trigger particle. Our definition of associated particle includes primary particles of the following species: pion, kaon, proton, electron, muon. The primary particle definition comprises particle coming from the primary vertex of interaction, including those coming from strong and electromagnetic decay of unstable particles, and particles deriving from the decay of hadrons with charm or beauty.
+trigger particles (D mesons) reconstructed and selected in the following $\pt^{\rm trig}$ ranges: $3<\pt^{\rm trig}<5$ $\gev/c$, $5<\pt^{\rm trig}<8$ $\gev/c$, $8<\pt^{\rm trig}<16$ $\gev/c$, $16<\pt^{\rm trig}<24$ $\gev/c$ (the possibility of extending the analysis in $2<\pt^{\rm trig}<3$ was also exploited. Further details are furnished in the next paragraph). Associated particles (charged tracks) have been reconstructed in the following $\pt^{\rm assoc}$ regions: $\pt^{\rm assoc}>0.3$ $\gev/c$, $0.3<\pt^{\rm assoc}<1$ $\gev/c$, $\pt^{\rm assoc}>1$ $\gev/c$, $1<\pt^{\rm assoc}<2$ $\gev/c$, $2<\pt^{\rm assoc}<3$ $\gev/c$. In this analysis, the particle identification defines the trigger particle rather than a momentum cut and therefore the momentum range of the associated particles is not constrained by that of the trigger particle. Our definition of associated particle includes primary particles of the following species: pion, kaon, proton, electron, muon. The primary particle definition comprises particle coming from the primary vertex of interaction, including those coming from strong and electromagnetic decay of unstable particles, and particles deriving from the decay of hadrons with charm or beauty.
 We therefore include any charged $\pi$,K,p,e,$\mu$ except those coming from weak decays of strange particles and particles produced in the interaction with the detector material. This definition corresponds to that used in the method AliAODMCParticle::IsPyhysicalPrimary().
 All associated particles surviving the selection cuts and not matching the adopted criterion are considered as a contamination whose contribution has to be corrected for. \\
 
@@ -10,7 +10,7 @@ The analysis is performed through the following steps:
 \underline {\bf D meson selection and signal extraction.}  For each single event, ``trigger" particles
 are defined as the selected  D meson candidates ($\Dzero$, $\Dplus$ and $\Dstar$)
 within a given $\pt^{\rm trig}$ range. The detection strategy for D mesons at central rapidity is
-the same performed for the analyses of the D-meson production at central rapidity~\cite{ALICEDmespp7Tev}, and also applied for the D-h analysis on 2016 pp and 2016 p-Pb samples (\cite{Notepp}, \cite{NotepPb}). It is based on the reconstruction of decay
+the same performed for the analyses of the D-meson production at central rapidity~\cite{ALICEDmespp7Tev}, and also applied for the D-h analysis on 2010 pp, 2016 pp and 2016 p-Pb samples (\cite{Notepp}, \cite{NotepPb}). It is based on the reconstruction of decay
 vertices displayed from the primary vertex by a few hundred $\mu$m and on the identification of the decay-particle species.
 The identification of the charged kaon and pion in the TPC and TOF detectors is also used, to further reduce the background at low $\pt$.  An invariant-mass analysis is then used to extract the raw signal yield, using the same fit functions described in~\cite{ALICEDhcorr}.
 The D mesons are selected in the rapidity range varying from $|y|<0.5$ at low $\pt$ to $|y|<0.8$ for $\pt>5~\gev/c$. %The final results are corrected to have D mesons within $|y|<0.5$.
@@ -88,7 +88,7 @@ enhances the fraction of reconstructed D mesons coming from the decay of a b-had
 
 \item
 \underline{\bf Study of correlation properties.}
-The properties of the azimuthal correlation distribution are quantified by fitting the distribution with a function composed of two Gaussian functions, modelling the near and the away side peaks, and a constant term describing the baseline. The mean of the Gaussian are fixed at $\Delta\varphi = 0$ and $\Delta\varphi = \pi$. To accomplish the $2\pi$ periodicity of the $\Delta\varphi$ variable, the Gaussian functions are ``duplicated'' with mean at $\Delta\varphi = 2\pi$ and $\Delta\varphi = -\pi$.
+The properties of the azimuthal correlation distribution are quantified by fitting the distribution with a function composed of two Gaussian functions, modelling the near and the away side peaks, and a constant term describing the baseline. The mean of the Gaussian are fixed at $\Delta\varphi = 0$ and $\Delta\varphi = \pi$. To accomplish the $2\pi$ periodicity of the $\Delta\varphi$ variable, the Gaussian functions are ``duplicated'' with mean shifted by $\Delta\varphi = 2\pi$ and $\Delta\varphi = -2\pi$.
 The fitting procedure is described in details in Section \ref{results}.
 
 
@@ -106,69 +106,73 @@ The fitting procedure is described in details in Section \ref{results}.
 \end{enumerate}
 
 \subsection{Mass plots and cut optimization}
-The invariant mass distributions of $\Dzero$, $\Dstar$ and $\Dplus$ in the various $\text{p}_T$ ranges are shown in Figure~\ref{fig:InvMassD0},~\ref{fig:InvMassDs} and~\ref{fig:InvMassDp} respectively. Note that the distributions are weighted by the D-meson selection and reconstruction efficiency, to allow a correct normalization of the correlation distributions, which have also these weights.
+The invariant mass distributions of $\Dzero$, $\Dstar$ and $\Dplus$ in the various $\text{p}_T$ ranges are shown in Figs.~\ref{fig:InvMassD01},~\ref{fig:InvMassD02}, Figs.~\ref{fig:InvMassDs1},~\ref{fig:InvMassDs2} and Figs.~\ref{fig:InvMassDp1},~\ref{fig:InvMassDp2} respectively. Note that the distributions are weighted by the D-meson selection and reconstruction efficiency, to allow a correct normalization of the correlation distributions, which have also these weights.
 
 \begin{figure}[!htp]
 \centering
-{\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins4to5.png}}
+{\includegraphics[width=0.85\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins4to5.png}}
 {\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins6to8.png}}
+
+%[width=.32\linewidth]
+\caption{Invariant mass distributions of $D^0$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Bottom: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right).}
+\label{fig:InvMassD01}
 \end{figure}
+
 \begin{figure}[!htp]
 \centering
 {\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins9to11.png}}
-{\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins12to13.png}}
-
+{\includegraphics[width=0.85\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins12to13.png}}
 %[width=.32\linewidth]
-\caption{Invariant mass distributions of $D^0$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Mid 1: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right); Mid2: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$.}
-\label{fig:InvMassD0}
+\caption{Invariant mass distributions of $D^0$ corrected with efficiency in different $\text{p}_T$ regions. Top: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$ (right), Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$.}
+\label{fig:InvMassD02}
 \end{figure}
 
 \begin{figure}[!htp]
 \centering
-{\includegraphics[width=1\linewidth, height=5.6cm]{figures/DStar_pp/InvMassDistributions_Dstar_Bins2to3.png}}
-{\includegraphics[width=1\linewidth, height=5.6cm]{figures/DStar_pp/InvMassDistributions_Dstar_Bins4to6.png}}
-{\includegraphics[width=1\linewidth, height=5.6cm]{figures/DStar_pp/InvMassDistributions_Dstar_Bins7to9.png}}
-{\includegraphics[width=0.6\linewidth, height=5.6cm]{figures/DStar_pp/InvMassDistributions_Dstar_Bins10to10.png}}
+{\includegraphics[width=0.94\linewidth]{figures/DStar_pp/InvMassDistributions_Dstar_Bins2to3.png}}
+{\includegraphics[width=0.94\linewidth]{figures/DStar_pp/InvMassDistributions_Dstar_Bins4to6.png}}
+\caption{Invariant mass distributions of $\Dstar$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Bottom: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right).}
+\label{fig:InvMassDs1}
+\end{figure}
 
-\caption{Invariant mass distributions of $\Dstar$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Mid 1: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right); Mid2: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$ .}
-\label{fig:InvMassDs}
+\begin{figure}[!htp]
+\centering
+{\includegraphics[width=0.94\linewidth]{figures/DStar_pp/InvMassDistributions_Dstar_Bins7to9.png}}
+{\includegraphics[width=0.94\linewidth]{figures/DStar_pp/InvMassDistributions_Dstar_Bins10to10.png}}
+\caption{Invariant mass distributions of $\Dstar$ corrected with efficiency in different $\text{p}_T$ regions. Top: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$ .}
+\label{fig:InvMassDs2}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 {\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins3to4.png}}
 {\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins5to7.png}}
+\caption{Invariant mass distribution of $\Dplus$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Bottom: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right);.}
+\label{fig:InvMassDp1}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 {\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins8to12.png}}
 {\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins13to13.png}}
-\caption{Invariant mass distribution of $\Dplus$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Mid 1: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right); Mid2: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$ .}
-\label{fig:InvMassDp}
+\caption{Invariant mass distribution of $\Dplus$ corrected with efficiency in different $\text{p}_T$ regions. Top: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$ .}
+\label{fig:InvMassDp2}
 \end{figure}
 
 For the $\Dstar$, 3 sets of cuts were compared (the 2016 p-Pb, 2016 pp and the standard D2H 2017 pp cuts). The best performance was obtained with 2016 p-Pb cuts in most of the $\pt$ bin analysed. Indeed, despite the looser cuts applied from D2H allow to have higher signal, the p-Pb set of cuts assured a better S/B factor without loosing too much signal. This allows us to reduce fluctuations induced by the sideband subraction, that is the limiting factor for the analysis performance.
 The same holds for the $\Dplus$, but with the addition of cuts on the normalized decay length in $xy$ plane and of the normalized difference between measured and expected daughter track impact parameters (topomatic cut).
 \\
 A particular cut optimization was instead performed for the $\Dzero$ meson. Twelve cut sets were tried, with the goal of increasing the S/B factor, in order to reduce fluctuations induced by the sideband subraction as explained.
-In Figure \ref{fig:cutoptD0} the $\Dzero$-h correlation distributions are shown for the different cut sets, in exemplary kinematic regions (left column), together with the bin-by-bin relative statistical uncertainty on the data points (right column). The best cut set (option G) was defined from the standard cuts used for the p-Pb 2013 cross section analysis, with a tightened selection on the cosine of the pointing angle, and with the addition of a cut on the normalized decay length in $xy$ plane and of a selection on the normalized difference between measured and expected daughter track impact parameters (topomatic cut).
+In Figure \ref{fig:cutoptD0} the $\Dzero$-h correlation distributions are shown for the different cut sets, in exemplary kinematic regions (5 to 8 $\gevc$), together with the bin-by-bin relative statistical uncertainty on the data points. The best cut set (option B, cyan colour) was defined starting from the standard cuts used for the p-Pb 2016 cross section analysis, with a tightened selection on the cosine of the pointing angle, and with the addition of a cut on the normalized decay length in $xy$ plane (from 5 to 3 units with increasing $\pt^{\rm D}$ and of a selection on the normalized difference between measured and expected daughter track impact parameters (topomatic cut) at 3 sigma.
 
 \begin{figure}[!htp]
 \centering
-%{\includegraphics[width=0.47\linewidth, height=5.6cm]{figures/Cut_Optimiz_D0/AzimCorrDistr_Dzero_Canvas_PtIntBins3to5_PoolInt_thr03to99_Superimp.png}}
-%{\includegraphics[width=0.47\linewidth, height=5.6cm]{figures/Cut_Optimiz_D0/Uncertanty_AzimCorrDistr_Dzero_Canvas_PtIntBins3to5_PoolInt_thr03to99.png}}
-%{\includegraphics[width=0.47\linewidth, height=5.6cm]{figures/Cut_Optimiz_D0/AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr03to99_Superimp.png}}
-%{\includegraphics[width=0.47\linewidth, height=5.6cm]{figures/Cut_Optimiz_D0/Uncertanty_AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr03to99.png}}
-%{\includegraphics[width=0.47\linewidth, height=5.6cm]{figures/Cut_Optimiz_D0/AzimCorrDistr_Dzero_Canvas_PtIntBins9to10_PoolInt_thr03to99_Superimp.png}}
-%{\includegraphics[width=0.47\linewidth, height=5.6cm]{figures/Cut_Optimiz_D0/Uncertanty_AzimCorrDistr_Dzero_Canvas_PtIntBins9to10_PoolInt_thr03to99.png}}
-
-%\caption{$\Dzero$-h correlation distributions with different cut options (left) and point-by-point relative statistical uncertainty (right) for $3< p_{T}^{\text{D}}< 5$ $\gev/c$ (top), $5< p_{T}^{\text{D}}< 8$ $\gev/c$ (middle), $8< p_{T}^{\text{D}}< 16$ $\gev/c$ (bottom), in all cases with associated track $\pt$ $> 0.3$ $\gev/c$.}
+{\includegraphics[width=1.3\textwidth, angle=90]{figures/Cut_Optimiz_D0/CutOptD0.JPG}}
+\caption{$\Dzero$-h correlation distributions with different cut options (top) and point-by-point relative statistical uncertainty (bottom) for $5< p_{\rm T}^{\text{D}}< 8 \gev/c$ for associated track $\pt$ $> 0.3 \gev/c$ (left), $03 < \pt$ $< 1 \gev/c$ (middle), $\pt$ $> 1 \gev/c$ (right)}
 \label{fig:cutoptD0}
 \end{figure}
 
  \subsubsection{Extension to vey-low $\pt$ of D mesons}
- 
 Thanks to the higher statistic of the 2017 pp data sample, we tried to enlarge our correlation studies to very-low $\pt$ of the trigger particle. Indeed, the Figure~\ref{fig:VeryLowPt} shows the good performance on the invariant mass extraction for all the 3 D-mesons with $2< p_{T}^{\text{D}}< 3$ $\gev/c$.
 
 \begin{figure}[!htp]
@@ -182,7 +186,7 @@ Thanks to the higher statistic of the 2017 pp data sample, we tried to enlarge o
 
 The extension of the analysis to this $\pt$ interval is of high interest for the jet structure characterizion. Indeed, this study allow us to investigate a kinematic region in which the trigger particle has compatible or even lower momentum with respect to the associated particles. This give us the possibility to better understand the production processes. In fact, for example, at the Leading Order (LO) for $\pt (trig) \sim \pt(ass)$ we don't expect any peak on the near-side region. A peak could arise only from Next-to-Leading-Order production process.
 
-Despite the good statistics, it wasn't enough to perform the correlation analysis. Indeed, the correlation distribution suffered of fluctuation expecially on the away-side region where most of the fit failed. 
+Despite the good statistics, it wasn't enough to perform the correlation analysis. Indeed, the correlation distribution peaks are very small, due to the small energy of the parton, resulting in few tracks being produced in the fragmentation oon top of the D meson. Hence, the correlation peaks were smothened by the baseline fluctuations (of the same order of magnitude of the peak itself), especially on the away-side region, where indeed most of the fit failed.
 
 
 
@@ -197,36 +201,6 @@ AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and AliAnalysi
 \subsubsection{Event Mixing}
 \input{./Sections/3Analysis_Strategy/EventMixing.tex}
 
-\begin{comment}
-\begin{figure}[!ht]
-\centering
-%{\includegraphics[width=.95\linewidth]{figures/Dplus_low_dot5_SEbyME.png}}
- \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for low $p_{T}$: $3 < p_{T}^{\text{D}^+} < 5 $\gev/c$$ with associated track $p_{T}$ threshold 0.3 $\gev/c$ }
-\label{fig:DplusSEbyMEPlots1}
-\end{figure}
-
-
-
-\begin{figure}[!ht]
-\centering
-%Marianna
-%{\includegraphics[width=.95\linewidth]{figures/Dplus_mid_dot5_SEbyME.png}}
- \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for mid $p_{T}$: $5< p_{T}^{\text{D}^+}< 8 $\gev/c$$ with associated track $p_{T}$ threshold 0.3 $\gev/c$ }
-\label{fig:DplusSEbyMEPlots2}
-\end{figure}
-
-\begin{figure}[!ht]
-\centering
-%{\includegraphics[width=.95\linewidth]{figures/Dplus_high_dot5_SEbyME.png}}
- \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for high $p_{T}$: $8< p_{T}^{\text{D}^+}< 16 $\gev/c$$ with associcated track $p_{T}$ threshold 0.3 $\gev/c$ }
-\label{fig:DplusSEbyMEPlots3}
-\end{figure}
-
-Figures \ref{fig:DplusSEbyMEPlots1}, \ref{fig:DplusSEbyMEPlots2}, \ref{fig:DplusSEbyMEPlots3} show the 2D correlation in Sideband Region and Signal region from SE and ME analysis for $D^+$ meson in different $p_{T}$ region.
-
-\end{comment}
-
-
 \newpage
 \subsubsection{Tracking and D-meson trigger efficiency}
 \input{./Sections/3Analysis_Strategy/STE_Deff.tex}
@@ -239,4 +213,4 @@ Figures \ref{fig:DplusSEbyMEPlots1}, \ref{fig:DplusSEbyMEPlots2}, \ref{fig:Dplus
 
 \subsubsection{Beauty feed-down}
 \input{./Sections/3Analysis_Strategy/BeautyFeedDown.tex}
- 
+

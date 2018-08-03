@@ -2,18 +2,17 @@
 The secondary tracks inside the associated track sample, due to interaction of primary track with the detector material or to decays of strange hadrons, are mostly removed by the DCA cuts applied during the cut selection phase (DCA($xy$) $<$ 1 cm, DCA($z$) $<$ 1 cm).
 Anyway, a small fraction of secondary tracks survives this cut, and the data correlation distributions have to be corrected for this residual contamination.
 The fraction of surviving secondary tracks is evaluated via a study on the LHC18a4a2$\_$fast sample, by counting the number of tracks accepted by the selection whose corresponding generated-level track doesn't satisfy the IsPhysicalPrimary() call, and dividing this number by the total number of accepted tracks.
-The outcome of the check is reported in Figure \ref{fig:secnumber}. As it's visible, no more than 5\% secondary tracks pass the selection. Moreover, the fraction of residual secondary tracks is flat along the $\Delta\varphi$ axis, as shown, for exemplary $\pt$ regions, in Figure \ref{fig:secdPhi}, where the inhomogeneities are always below 1\%.
-For this reason, it is possible to directly scale the data correlation distributions by their purity fraction (i.e. 1 - secondary contamination). This is done with an associated $\pt$ dependence, due to the increase of the purity with the track $\pt$, while the purity fraction is taken flat versus the D-meson $\pt$.
-The purity values that were choosen are the following (NOT FINAL):
-\begin{itemize}
-  \item $\pt$(assoc) $> 0.3$ $\gev/c$ : 0.958
-  \item $\pt$(assoc) $> 1$ $\gev/c$ : 0.973
-  \item $0.3 < \pt$(assoc) $< 1$ $\gev/c$ : 0.953
-  \item $1 < \pt$(assoc) $< 2$ $\gev/c$ : 0.969
-  \item $2 < \pt$(assoc) $< 3$ $\gev/c$ : 0.982
-  %\item $\pt$(assoc) $> 3$ $\gev/c$ : 0.990
-\end{itemize}
+The outcome of the check is reported in Figure \ref{fig:secnumber}. As it's visible, no more than about 4.5\% secondary tracks pass the selection (6\% in the lowest associated $\pt$ range). Moreover, the fraction of residual secondary tracks is rather flattish along the $\Delta\varphi$ axis, as shown, for exemplary $\pt$ regions, in Figure \ref{fig:secdPhi}, where the inhomogeneities are generally not larger than about 1\%.
+Anyway, to take into account these modulations, which vary from bin to bin, the purity correction was performed differentially though the azimuthal axis (i.e. applied bin-per-bin on the azimuthal correlation distributions). In addition, this was important to consider since though these structures are small, they could be amplified after the subtraction of the baseline, when going to the yield evaluation.
 
+In particular, three approaches were tried, by multiplying the data correlation distribution in each kinematic range by:
+\begin{itemize}
+  \item the MC primary/inclusive histogram (blue histogram in Fig. \ref{fig:secdPhi})
+  \item a polynomial fit applied to the MC primary/inclusive histogram (red curve in Fig. \ref{fig:secdPhi})
+  \item a moving average, considering 3 points, of the MC primary/inclusive histogram (red histogram in Fig. \ref{fig:secdPhi})
+\end{itemize}
+Each approach has pros and cons, since directly using the primary/inclusive histogram gives a correction strongly dependent on the statistical fluctuations, while using the fit or the moving average smoothen the fluctuation, but also the structures with a physical origin (and the fit misses a periodicity condition).
+For this reason, a comparison of the outcome of the correction after applying either of the approaches (and the old 'flat' correction approach) was performed, which gave full compatibility (within less than 1\%) of the correlation distributions corrected with either approach. The moving average approach was chosen as standard correction procedure.
 
 \begin{figure}[h]   %da B
 	\centering
@@ -35,16 +34,16 @@ The purity values that were choosen are the following (NOT FINAL):
 {\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_2to3_03to1_RatioPrimOverAll.png}}
 {\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_2to3_1to99_RatioPrimOverAll.png}}
 {\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_3to5_03to1_RatioPrimOverAll.png}}
-{\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_3to5_1to99_RatioPrimOverAll.png}} 
+{\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_3to5_1to99_RatioPrimOverAll.png}}
 {\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_5to8_03to1_RatioPrimOverAll.png}}
-{\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_5to8_1to99_RatioPrimOverAll.png}} 
+{\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_5to8_1to99_RatioPrimOverAll.png}}
 {\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_8to16_03to1_RatioPrimOverAll.png}}
 {\includegraphics[width=0.4\linewidth]{figures/SecTracks/DeltaPhi_8to16_1to99_RatioPrimOverAll.png}}
 	\caption{Fraction of primary track in the reconstructed associated track sample (blue histogram). The polynomial fit function (red curve) and the 3-point moving average (red histogram) are also superimposed. The $\pt$(D) ranges are 2-3, 3-5, 5-8, 8-16 GeV/$c$, respectively for each row, and $0.3 < \pt$(assoc)$ < 1$, $\pt$(assoc) $> 1$ GeV/$c$ inside each row.}
 	\label{fig:secdPhi}	
 \end{figure}
 
-It was also verified with the same Monte Carlo study that applying the DCA selection rejects less than 0.2\% primary tracks (tagged as false positives) from the associated track sample, again with a flat azimuthal distribution, inducing hence a fully negligible bias on the data correlation distributions. This is shown in Figure \ref{fig:primRej}. This was also verified for specific charm-origin and beauty-origin tracks, due to their larger DCA with respect to primary tracks from light quarks. In this case, the fraction of rejected charm and beauty tracks stays below 1\% in all the kinematic ranges apart from the associated track $\pt$ regions 0.3-1 and $>0.3$ $\gev/c$ , where the rejection can be as high as 2\%. In these kinematic ranges, though, the data correlation distributions are dominated by non-heavy-flavour tracks, as it was verified from the simulations, hence the overall bias is still contained below 1\%, thus negligible.
+It was also verified with the same Monte Carlo study that applying the DCA selection rejects less than 1\% primary tracks (tagged as false positives) from the associated track sample, and less than 1\% of heavy-flavour origined tracks, again with a flattish azimuthal distribution, inducing hence a fully negligible bias on the data correlation distributions. This is shown in Figure \ref{fig:primRej}. This was also verified for specific charm-origin and beauty-origin tracks, due to their larger DCA with respect to primary tracks from light quarks. In this case, the fraction of rejected charm and beauty tracks stays below 1\% in all the kinematic ranges apart from the associated track $\pt$ regions 0.3-1 and $>0.3$ $\gev/c$ , where the rejection can be as high as 2\%. In these kinematic ranges, though, the data correlation distributions are dominated by non-heavy-flavour tracks, as it was verified from the simulations, hence the overall bias is still contained below 1\%, thus negligible.
 
 \begin{figure}[h]   %da B
 	\centering
@@ -58,7 +57,7 @@ It was also verified with the same Monte Carlo study that applying the DCA selec
 		\label{fig:primRej}	
 \end{figure}
 
-These studies were performed on an enriched Monte Carlo sample, which could not fully reproduce the relative abundancies of the species. Anyway, for events with a reconstructed D-meson, this bias is expected to be minor, and only these events are used in the data analysis. In any case, the percentages obtained from the study were found to be consistent within 1\%.
+These studies were performed on an enriched Monte Carlo sample, which could not fully reproduce the relative abundances of the species. Anyway, for events with a reconstructed D-meson, this bias is expected to be minor, and only these events are used in the data analysis. In any case, the percentages obtained from the study were found to be consistent within 1\%.
 
 \clearpage
 %\end{document}
