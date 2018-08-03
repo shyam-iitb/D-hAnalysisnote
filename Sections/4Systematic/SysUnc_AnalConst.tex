@@ -72,6 +72,7 @@ Figures~\ref{fig:Syst_D0Yield}, show the ratios obtained by the above mentioned 
 \end{figure}
 %\end{comment}
 
+\begin{comment}
 
 \subsection{Uncertainty on background correlation shape}
 The systematic uncertainty for the subtraction of the background correlations includes the effects due to a potentially biased description of the background correlation shape, which is evaluated from of the sidebands correlations. In particular, the background correlation shape could present some hidden invariant mass dependence. To estimate this uncertainty, the invariant mass range of the sidebands definitions was varied with respect to the default values. For the $\Dzero$ meson, the usual range of the sidebands is $4$ to $8$ $\sigma$ from the centre of the peak of the Gaussian fit and it was modified, for both sidebands to:
@@ -148,7 +149,7 @@ The rest of the procedure for the azimuthal correlations distribution was unchan
  \caption{Ratios of $\Dplus$-h correlation plots obtained by changing the sideband ranges over those obtained with standard sideband ranges. Rows: $\pt$($\Dplus$) 3-5, 5-8, 8-16, 16-24 $\gev/c$. In each row, the panels show the associated track $\pt$ ranges 0.3-1, $>$0.3 $\gev/c$ and $>$1 $\gev/c$, respectively.}
 \label{fig:Syst_DplusBkg}
 \end{figure}
-%\end{comment}
+
 \subsection{Uncertainty on D-meson cut stability}
 To study the systematics due to the topological selections on the D meson, the cut variation approach was used. For each D-meson, alternate sets of released and tightened selection cuts were applied to extract the correlation distribution, varying in particular the cosine of the pointing angle, the maximum DCA among the daughter tracks and the product of the daughter track impact parameters. For each set of cuts new 2D ($\pt$ vs multiplicity), D meson efficiency map was computed.
 In Figures \ref{fig:D0effVars}, \ref{fig:DstareffVars}, \ref{fig:DpluseffVars} (for $\Dzero$, $\Dstar$ and $\Dplus$, respectively) the ratio of the different 1D efficiencies with the alternate cuts with respect to the default cut selection is chosen, to highlight how the different selections effectively varied the efficiency values, especially at low $\pt$, where cuts are more effective.
@@ -230,7 +231,7 @@ Figure \ref{fig:Syst_D0CutVar}, \ref{fig:Syst_DstarCutVar}, \ref{fig:Syst_DplusC
 \label{fig:Syst_DplusCutVar}
 \end{figure}
 
-%\end{comment}
+
 
 \subsection{Uncertainty on tracking efficiency evaluation}
 The systematic uncertainty for the tracking efficiency includes the effects related to the set of filtering cuts defined for the associated tracks selection (mainly requests on the quality of reconstructed tracks for the TPC and ITS detectors). This uncertainty was determined by repeating the full analysis using different selections for the cuts on the associated tracks with respect to the usual selection (TPC only tracks with at least 2 points in the ITS). The alternative selections were: pure TPConly selection, meaning TPC tracks with no requests on the number of hits in the ITS, and TPC+ITS selection, which requires filterbit 4 with, in addition, at least 3 points in the ITS, ITS refit and a hit in at least an SPD layer. The ratios of the azimuthal correlation distributions with different sets of tracks selection over distributions with standard selection were evaluated, and are shown in Figures~\ref{fig:Syst_EffTrack} and ~\ref{fig:Syst_EffTrack2} for $\Dzero$-h correlations. Their values were used to determine a systematic uncertainty, which as the previous ones could be assigned flat in $\Delta\varphi$, and which was estimated of 3\% in all the ranges of $\pt$ analyzed.
@@ -271,7 +272,7 @@ The systematic uncertainty for the tracking efficiency includes the effects rela
  \caption{Ratios  of $\Dzero$-h correlation plots obtained with different associated tracks filtering selections. First 6 plots: $\pt$(D) 8-16 $\gev/c$, next 6 plots: $\pt$(D) 16-24 $\gev/c$. Each bunch of 6 plots has $\pt$(assoc) of $>$0.3, 0.3-1, $>$1, 1-2, 2-3, $<$3 $\gev/c$, respectively.}
  \label{fig:Syst_EffTrack2}
 \end{figure}
-%\end{comment}
+
 \subsection{Uncertainty on secondary particle contamination}
 Secondary particles, i.e. particles coming from strange hadrons decays or particles produced in interactions with the material, are expected to be tagged and removed by means of a distance of closest approach (DCA) from primary vertex cut. The uncertainty arising from the residual contamination of secondary tracks can be estimated from a Monte Carlo study, at reconstructed level. The number of primary/secondary tracks which are accepted/rejected from the DCA cut was determined for different values of the DCA selection, and the correlation distributions for the various cases were evaluated. The variations were done in the $xy$ direction, where the DCA resolution is better, and the following cases were tried (in addition to the default 1 cm cut): 0.1 cm, 0.25 cm, 0.5 cm, filtering DCA cut (i.e. 2.4 cm).
 
@@ -329,7 +330,7 @@ The ratios show a flat trend along the $\Delta\varphi$ axis and, in general, a d
  \caption{Ratios of correlation plots (with $\Dzero$ as trigger meson) obtained with different associated DCA selections, after purity correction. First 6 plots: $\pt$(D) 8-16 $\gev/c$, next 6 plots: $\pt$(D) 16-24 $\gev/c$. Each bunch of 6 plots has $\pt$(assoc) of $>$0.3, 0.3-1, $>$1, 1-2, 2-3, $<$3 $\gev/c$, respectively.}
 \label{fig:DCAvarData2}
 \end{figure}
-%\end{comment}
+
 \subsection{Uncertainty on feed-down subtraction}
 As described in the \ref{feeddown} section, the feed-down subtraction from the data distributions is performed by means of simulation templates of B$\rightarrow$D-h correlation distributions from PYTHIA6 generator, with Perugia2011 tune, and considering the central value of $f_{\rm prompt}$ to extract the feed-down D-meson contribution. In order to evaluate a systematic uncertainty on this procedure, the feed-down subtraction procedure was repeated considering, together with PYTHIA6+Perugia2011 templates, also PYTHIA6+Perugia2010 and PYTHIA8 simulations. In each case, not only the central value of the measured $f_{\rm prompt}$ was considered to rescale the distributions, but also the maximum and minimum values of its total uncertainty.
 
@@ -356,6 +357,3 @@ The systematics uncertainties from feed-down subtraction and B$\rightarrow$D dec
 \label{fig:SystOverall}
 \end{figure}
 \end{comment}
-
-
-\end{document}
