@@ -336,7 +336,7 @@ Secondary particles, i.e. particles coming from strange hadrons decays or partic
 
 Figure~\ref{fig:DCAvar} shows the amount of secondary tracks which are accepted by the DCA cut, over the total number of tracks (primary and secondary) accepted by the selection, for the various DCA selections that were tried. This is shown for the exemplary case of $5 < \pt < 8$ $\gev/c$ (there's no $\pt$(D) dependence) and as a function of the associated track $\pt$ ranges. Hence, this quantity represents the residual contamination of secondary tracks in our reconstructed track sample. From these values, the corresponding primary track purities (1-contamination) were extracted, in each of the momentum ranges.
 It was also verified that, for all the cut selections, the $\Delta\varphi$ distributions of the residual contaminations were flat within 1\%.
-
+\begin{comment}
 \begin{figure}[h]
 \centering
 \resizebox{0.47\textwidth}{!}{\includegraphics[width=.47\linewidth]{figures/Systematics/Common/Purity/FractOfSecOverTotal_5to8_240.png}}
@@ -347,7 +347,7 @@ It was also verified that, for all the cut selections, the $\Delta\varphi$ distr
  \caption{Secondary track contamination as a funciton of the associated track $\pt$, for the various DCA selections tried. The plots are ordered from the loosest to the tightest selection, i.e.: DCA($xy$) $<$2.4 cm, $<$1 cm, $<$0.5 cm, $<$0.25 cm, $<$0.1 cm.}
  \label{fig:DCAvar}
 \end{figure}
-
+\end{comment}
 As a second step of the procedure to verify the DCA cut stability, the $\Dzero$-h data analysis was performed with all the different DCA selection (each time with the proper tracking efficiency map). After having extracted the correlation distributions, these were rescaled for the corresponding purities and compared with the purity-corrected correlation distributions obtained with the standard DCA selection.
 The ratios of the alternate selections over the standard selection, after the purity correction of both, are shown in Figures~\ref{fig:DCAvarData} and~\ref{fig:DCAvarData2}.
 
@@ -357,17 +357,13 @@ The ratios show a flat trend along the $\Delta\varphi$ axis and, in general, a d
 \centering
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins4to5_PoolInt_thr03to99.png}}
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins4to5_PoolInt_thr03to1.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins4to5_PoolInt_thr1to99.png}} \\
+\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins4to5_PoolInt_thr1to99.png}} 
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins4to5_PoolInt_thr1to2.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins4to5_PoolInt_thr2to3.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins4to5_PoolInt_thr3to99.png}} \\
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr03to99.png}}
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr03to1.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr1to99.png}} \\
+\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr1to99.png}} 
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr1to2.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr2to3.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins6to8_PoolInt_thr3to99.png}} \\
- \caption{Ratios of correlation plots (with $\Dzero$ as trigger meson) obtained with different associated DCA selections, after purity correction. First 6 plots: $\pt$(D) 3-5 $\gev/c$, next 6 plots: $\pt$(D) 5-8 $\gev/c$. Each bunch of 6 plots has $\pt$(assoc) of $>$0.3, 0.3-1, $>$1, 1-2, 2-3, $<$3 $\gev/c$, respectively.}
+ \caption{Ratios of correlation plots (with $\Dzero$ as trigger meson) obtained with different associated DCA selections, after purity correction. First 4 plots: $\pt$(D) 3-5 $\gev/c$, next 4 plots: $\pt$(D) 5-8 $\gev/c$. Each bunch of 4 plots has $\pt$(assoc) of $>$0.3, 0.3-1, $>$1, 1-2 $\gev/c$, respectively.}
 \label{fig:DCAvarData}
 \end{figure}
 
@@ -375,17 +371,13 @@ The ratios show a flat trend along the $\Delta\varphi$ axis and, in general, a d
 \centering
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to99.png}}
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to1.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1to99.png}} \\
+\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1to99.png}} 
 \resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1to2.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins9to11_PoolInt_thr2to3.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins9to11_PoolInt_thr3to99.png}} \\
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to12_PoolInt_thr03to99.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to12_PoolInt_thr03to1.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to12_PoolInt_thr1to99.png}} \\
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to12_PoolInt_thr1to2.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to12_PoolInt_thr2to3.png}}
-\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to12_PoolInt_thr3to99.png}} \\
- \caption{Ratios of correlation plots (with $\Dzero$ as trigger meson) obtained with different associated DCA selections, after purity correction. First 6 plots: $\pt$(D) 8-16 $\gev/c$, next 6 plots: $\pt$(D) 16-24 $\gev/c$. Each bunch of 6 plots has $\pt$(assoc) of $>$0.3, 0.3-1, $>$1, 1-2, 2-3, $<$3 $\gev/c$, respectively.}
+\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to13_PoolInt_thr03to99.png}}
+\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to13_PoolInt_thr03to1.png}}
+\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to13_PoolInt_thr1to99.png}} 
+\resizebox{0.32\textwidth}{!}{\includegraphics[width=.30\linewidth]{figures/Systematics/Common/Purity/Ratio_AzimCorrDistr_Dzero_Canvas_PtIntBins12to13_PoolInt_thr1to2.png}}
+ \caption{Ratios of correlation plots (with $\Dzero$ as trigger meson) obtained with different associated DCA selections, after purity correction. First 4 plots: $\pt$(D) 8-16 $\gev/c$, next 4 plots: $\pt$(D) 16-24 $\gev/c$. Each bunch of 4 plots has $\pt$(assoc) of $>$0.3, 0.3-1, $>$1, 1-2 $\gev/c$, respectively.}
 \label{fig:DCAvarData2}
 \end{figure}
 
