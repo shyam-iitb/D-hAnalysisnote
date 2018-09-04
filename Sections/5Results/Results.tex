@@ -247,11 +247,9 @@ The usage of weighted average requires, as an underlying assumption, identical r
 %\caption{Comparison of weighted and arithmetic averages of $\Dzero$, $\Dplus$ and $\Dstar$-hadron correlations, in selected kinematic ranges.}
 %\label{fig:CfrAveragesAppr}
 %\end{figure}
+\clearpage
 
-\subsection{Fit observable $\pt$ trends and uncertainties}
-
-%The extraction of the parameters (i.e. near side associated yield, near side width, and baseline) is performed using the strategy described above. The pedestal is calculated as the weighted average of the 8 points (for the full 2$\pi$ range plots) lying in the so-called "transverse region", i.e. the interval $\frac{\pi}{4}<|\Delta\varphi|<\frac{\pi}{2}$.
-
+\subsection{Fit of correlation distributions and observables}
 In order to extract quantitative and physical information from the data correlation patterns, the averaged D-h correlation distributions are fitted with two Gaussian functions (with means fixed at $\Delta\varphi$=0 and $\Delta\varphi$=$\pi$ values), plus a constant term (baseline). A periodicity condition is also applied to the fit function to obtain the same value at the bounds of 2$\pi$ range. The expression of the fit function is reported below (equation \ref{eq:fitfunction}):
 
 %Added by Sandro
@@ -262,441 +260,300 @@ f\left(\Delta\varphi\right) = c + \frac{Y_{NS}}{\sqrt{2\pi}\sigma_{NS}}e^{-\frac
 
 where baseline is calculated as the weighted average of the points lying in the so-called "transverse region", i.e. the interval $\frac{\pi}{4}<|\Delta\varphi|<\frac{\pi}{2}$.
 
-Results from the fit for the studied kinematical regions are shown in Figure~\ref{fig:ExFit}
+Results from the fit for the studied kinematical regions are shown in Figures~\ref{fig:StdFit1},~\ref{fig:StdFit2},~\ref{fig:StdFit3},~\ref{fig:StdFit4},~\ref{fig:StdFit5}, displaying also the values of near-side and away-side peak yields (the Gaussian integrals) and widths (the $\sigma$ of the two Gaussians).
 
 \begin{figure}[h]
 \centering
-%\resizebox{0.7\textwidth}{!}
-%Marianna
-%Pt>2.0-3.0
-{\includegraphics[width=0.99\linewidth, height=0.70\linewidth]{figures/Fits/cFitting_0_pthad0dot3to99dot0.png}}
-{\includegraphics[width=0.99\linewidth, height=0.70\linewidth]{figures/Fits/cFitting_0_pthad0dot3to1dot.png}}
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad0dot3to99dot0.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation. The set of five panels is for $\pt>0.3~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:StdFit1}
 \end{figure}
 \begin{figure}[h]
 \centering
-{\includegraphics[width=0.99\linewidth, height=0.70\linewidth]{figures/Fits/cFitting_0_pthad1dot0to99dot.png}}
-{\includegraphics[width=0.99\linewidth, height=0.70\linewidth]{figures/Fits/cFitting_0_pthad1dot0to2dot0.png}}
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad0dot3to1dot.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation. The set of five panels is for $0.3<\pt<1~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:StdFit2}
 \end{figure}
 \begin{figure}[h]
 \centering
-{\includegraphics[width=0.99\linewidth, height=0.70\linewidth]{figures/Fits/cFitting_0_pthad2dot0to3dot0.png}}
-%{\includegraphics[width=0.99\linewidth, height=0.70\linewidth]{figures/Fits/cFitting_4_pthad1to2.png}}
-%{\includegraphics[width=.75\linewidth]{figures/cFitOutput_NiceStyle_pPb_WeightedAverage_1_99.png}}
-\caption{Fits to azimuthal correlation distributions and baseline estimation. Each set of five panels is for, from top to bottom: $\pt>0.3~\gev/c$, $0.3 < \pt < 1~\gev/c$, $\pt>1~\gev/c$, $1 < \pt < 2~\gev/c$ and $2 < \pt < 3~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
- \label{fig:ExFit}
- \end{figure}
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad1dot0to99dot.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation. The set of five panels is for $\pt>1~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:StdFit3}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad1dot0to2dot0.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation. The set of five panels is for $1<\pt<2~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:StdFit4}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad2dot0to3dot0.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation. The set of five panels is for $2<\pt<3~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:StdFit5}
+\end{figure}
 
 From the fit outcome, it is possible to retrieve the near-side and away-side yield and widths (integral and sigma of the Gaussian functions, respectively), as well as the baseline height of the correlation distribution. The near-side observables give information on the multiplicity and angular spread of the tracks from the fragmentation of the charm jet which gave birth to the D-meson trigger. At first order, instead, the away-side observables are related to the hadronization of the charm parton produced in the opposite direction (though the presence of NLO processes for charm production breaks the full validity of this assumption). The baseline value is a rough indicator of the underlying event multiplicity, though below the baseline level also charm and beauty-related pairs are contained (especially in cases of NLO production for the heavy quarks).
+\clearpage
 
-\begin{comment}
-Figures (\ref{fig:dzerofinaldphifitted}), ( \ref{fig:dstarfinaldphifitted}) and ( \ref{fig:averagefinaldphifitted}) show the fitted correlation distributions of the $\Dzero$, $\Dstar$ and the average; the systematic boxes include only the uncorrelated systematics.
+\subsubsection{Generalized Gaussian for near-side peak}
+As it can be observed in Figures~\ref{fig:StdFit1},~\ref{fig:StdFit2},~\ref{fig:StdFit3},~\ref{fig:StdFit4},~\ref{fig:StdFit5}, at high transverse momentum of the D-meson and of the associated track the tails of the near-side peak are always underestimated by the fitting function, if a standard Gaussian is employed for fitting the near-side (and, in general, the shape of the peak seems not well described by a Gaussian).
 
+To dig into this issue, an alternate fitting function was adopted for the near-side peak fitting, i.e. the generalized Gaussian function \ref{fig:GenGauss}, with PDF:
+\begin{equation}
+f(\Delta\varphi) = frac{\beta}{2\alpha\Gamma(1/\beta)}e^{-(|x-\mu|/\alpha)^\beta}
+\end{equation}
+and having as variance $\frac{\alpha\Gamma(3/\beta)}{\Gamma(1/\beta)}$.
+The square root of the variance was used as near-side width fit observable instead of the Gaussian $\sigma$, together with the integral of the fitting function, which defines the near-side yield.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-\caption{Final plot:  $\Dzero$ correlation, including only the uncorrelated systematics and the fitted function, with  $3 < D\ p_\text{T} < 5$ GeV/$c$, $5 < D\ p_\text{T} < 8$ GeV/$c$ and $8 < D\ p_\text{T} < 16$ GeV/$c$, while the associated tracks are selected with $p_{T}^{assoc}>0.3  GeV/c $.  }
-
-\label{fig:dzerofinaldphifitted}
+\resizebox{0.98\textwidth}{!}{\includegraphics[width=\linewidth]{figures/GenGauss.png}}
+\caption{Generalized Gaussian function for different $\beta$ parameter values.}
+\label{fig:GenGauss}
 \end{figure}
 
-\begin{figure}
-\centering
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-\caption{Final plot:  $\Dstar$ correlation, including only the uncorrelated systematics and the fitted function, with  $3 < D\ p_\text{T} < 5$ GeV/$c$, $5 < D\ p_\text{T} < 8$ GeV/$c$ and $8 < D\ p_\text{T} < 16$ GeV/$c$, while the associated tracks are selected with $p_{T}^{assoc}>0.3  GeV/c $. The  plot with $3 < D\ p_\text{T} < 5$ GeV/c is not considered in the final plots, due to the discrepancy between $\Dzero$ and $\Dstar$ }
+In Figs~\ref{fig:AltFit1},~\ref{fig:AltFit2},~\ref{fig:AltFit3},~\ref{fig:AltFit4},~\ref{fig:AltFit5}, the fit of all the kinematic regions using the generalized Gaussian in the near-side region are reported (to be compared with Figs.~\ref{fig:StdFit1},~\ref{fig:StdFit2},~\ref{fig:StdFit3},~\ref{fig:StdFit4},~\ref{fig:StdFit5}).
+As it can be seen, the near-side yields remain very similar in the two approaches, apart from an increase of the yields up to 10\% in 16-24 $\gevc$. The widths are generally comparable at low $\pt$ of the D-meson, then increase in the generalized Gaussian case from 8 $\gevc$ onwards, up to about a 20\% difference. Anyway, one shall consider that the width has not the same interpretation for the two fitting functions (there's no probabilistic meaning for the width in the case of generalized Gaussian).
 
-\label{fig:dstarfinaldphifitted}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad0dot3to99dot0_Alt.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation, with the generalized Gaussian for the near-side peak. The set of five panels is for $\pt>0.3~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:AltFit1}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad0dot3to1dot_Alt.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation, with the generalized Gaussian for the near-side peak. The set of five panels is for $0.3<\pt<1~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:AltFit2}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad1dot0to99dot_Alt.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation, with the generalized Gaussian for the near-side peak. The set of five panels is for $\pt>1~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:AltFit3}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad1dot0to2dot0_Alt.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation, with the generalized Gaussian for the near-side peak. The set of five panels is for $1<\pt<2~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:AltFit4}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.99\linewidth, height=0.70\linewidth,angle=270]{figures/Fits/cFitting_0_pthad2dot0to3dot0_Alt.png}
+\caption{Fits to azimuthal correlation distributions and baseline estimation, with the generalized Gaussian for the near-side peak. The set of five panels is for $2<\pt<3~\gev/c$. The corresponding $\pt$ ranges of D-mesons are reported in each panel.}
+\label{fig:AltFit5}
 \end{figure}
 
-\begin{figure}
-\centering
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-%\includegraphics[width=.49\linewidth]{figures/xxxxxx} \\
-\caption{Final plot: average of $\Dzero$ and $\Dstar$ correlation, including only the uncorrelated systematics and the fitted function, with  $3 < D\ p_\text{T} < 5$ GeV/$c$, $5 < D\ p_\text{T} < 8$ GeV/$c$ and $8 < D\ p_\text{T} < 16$ GeV/$c$, while the associated tracks are selected with $p_{T}^{assoc}>0.3  GeV/c $. The  plot with $3 < D\ p_\text{T} < 5$ GeV/c is not considered in the final plots, due to the discrepancy between $\Dzero$ and $\Dstar$ }
+\clearpage
+Further information can be obtained comparing the fits with the two function for Monte Carlo templates, where the statistical precision is much better than on data, allowing us to check which function has effectively the compatibility with the points - by visually comparing fit and distribution, looking at the $\chi^2/{\rm ndf}$ and comparing the values of the yields with the bin-counting extracted yields.
 
-\label{fig:averagefinaldphifitted}
+This comparison is performed in Figs. \ref{fig:TemplateFits1}, \ref{fig:TemplateFits2}, \ref{fig:TemplateFits3}, \ref{fig:TemplateFits4}, for two low and two high $\pt$ ranges. While at low $\pt$ the two fit outcomes are rather similar, as the $\beta$ parameter is pretty close to 2 (the standard Gaussian value), at high $\pt$ the two fit results are much more differentiated, $\beta$ is sansibly smaller than 2, the shape of the generalized Gaussian has much thinner core and higher tails, and catches much better the peak tails (having also a better $\chi^2$ and a better agreement with bin-counting yields.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.48\linewidth]{figures/Fits/FitOfTemplate_CorrelationPlotsPOWHEG_3To5_03to1_Func2.png}
+\includegraphics[width=0.48\linewidth]{figures/Fits/FitOfTemplate_CorrelationPlotsPOWHEG_3To5_03to1_Func7.png}
+\caption{Comparison of fit outcome for POWHEG$+$PYTHIA templates for standard (left) and generalized Gaussian (right) for the near-side, for $\pt$(D) 3-5 $\gevc$ and $\pt$(assoc) $0.3-1$.}
+\label{fig:TemplateFits1}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.48\linewidth]{figures/Fits/FitOfTemplate_CorrelationPlotsPOWHEG_5To8_03to1_Func2.png}
+\includegraphics[width=0.48\linewidth]{figures/Fits/FitOfTemplate_CorrelationPlotsPOWHEG_5To8_03to1_Func7.png}
+\caption{Comparison of fit outcome for POWHEG$+$PYTHIA templates for standard (left) and generalized Gaussian (right) for the near-side, for $\pt$(D) 5-8 $\gevc$ and $\pt$(assoc) $0.3-1$.}
+\label{fig:TemplateFits2}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.48\linewidth]{figures/Fits/FitOfTemplate_CorrelationPlotsPOWHEG_8To16_2to3_Func2.png}
+\includegraphics[width=0.48\linewidth]{figures/Fits/FitOfTemplate_CorrelationPlotsPOWHEG_8To16_2to3_Func7.png}
+\caption{Comparison of fit outcome for POWHEG$+$PYTHIA templates for standard (left) and generalized Gaussian (right) for the near-side, for $\pt$(D) 8-16 $\gevc$ and $\pt$(assoc) $2-3$.}
+\label{fig:TemplateFits3}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.48\linewidth]{figures/Fits/FitOfTemplate_CorrelationPlotsPOWHEG_16To24_1to99_Func2.png}
+\includegraphics[width=0.48\linewidth]{figures/Fits/FitOfTemplate_CorrelationPlotsPOWHEG_16To24_1to99_Func7.png}
+\caption{Comparison of fit outcome for POWHEG$+$PYTHIA templates for standard (left) and generalized Gaussian (right) for the near-side, for $\pt$(D) 16-24 $\gevc$ and $\pt$(D) $>1$.}
+\label{fig:TemplateFits4}
 \end{figure}
 
-\end{comment}
-
-The evaluation of the systematic uncertainties on the observables obtained from the fits is performed as follows (\textbf{THIS PARAGRAPH WILL BE UPDATED}):
+\clearpage
+\subsection{Systematic uncertainties on fit observables}
+The evaluation of the systematic uncertainties on the observables obtained from the fits is performed as follows:
 
 \begin{itemize}
 \item The fits are repeated by changing the range of the transverse region in which the baseline is evaluated. Alternate definitions of $\frac{\pi}{4}<|\Delta\varphi|<\frac{3\pi}{8}$, $\frac{3\pi}{8}<|\Delta\varphi|<\frac{\pi}{2}$ and $\frac{\pi}{4}<|\Delta\varphi|<\frac{5\pi}{8}$ are considered.
-\item In addition, $\Delta\varphi$ correlation points are shifted to the upper and lower bounds of their uncorrelated systematic boxes, and refitted.
-\item The fits are also repeated by moving the baseline value from its default value (i.e. with the default transverse region) on top and on bottom of its statistic uncertainty. This helps to account, though in a systematic uncertainty, for the statistical uncertainty on the baseline position (since in the fit the baseline is constrained, and its error is not propagated to the other observables).
-\item The envelope between (i) the RMS of the relative variations of the parameters between the fit outcomes defined in the first two points, and (ii) the relative variations of the parameters from the fit outcomes defined in the third point, is considered as systematic uncertainty for the near-side and away-side widths.
+\item This is performed both with the standard Gaussian function, and for the generalized Gaussian function (for the near-side description). Hence, 4 variations for each fitting function are considered.
+\item In addition, $\Delta\varphi$ correlation points are shifted to the upper and lower bounds of their uncorrelated systematic boxes, and refitted (with the standard Gaussian).
+\item The fits are also repeated by moving the baseline value from its default value (i.e. with the default transverse region) on top and on bottom of its statistic uncertainty before fitting with the default function. This helps to account, though in a systematic uncertainty, for the statistical uncertainty on the baseline position (since in the fit the baseline is constrained, and its error is not propagated to the other observables).
+\item The envelope between (i) the RMS of the relative variations of the parameters between the fit outcomes defined in the first three points, and (ii) the relative variations of the parameters from the fit outcomes defined in the fourth point, is considered as systematic uncertainty for the near-side and away-side widths.
 \item For the estimation of the baseline and of the near-side and away-side yields, instead, the previous value is added in quadrature with the $\Delta\varphi$-correlated systematics in the correlation distributions, since these values are affected by a change in the global normalization of the distributions.
-\item In addition, for all the fit observables, an additional fit variation is performed assuming, instead of a flat baseline, a v$_{2\Delta}$-like modulation, with the following v$_2$ values for the associated tracks (assuming $v_{2\Delta} = v_2({\rm h}) \cdot v_2({\rm D})$: 0.04 (0.3-1 GeV/c), 0.06 ($>$0.3 GeV/c), 0.08 (1-2 GeV/c), 0.09 ($>$1 GeV/c, 2-3 GeV/c), 0.1 ($>$3 GeV/c), on the basis of ATLAS preliminary results for heavy-flavour muons at 8 TeV; for the D-meson triggers the following v$_2$ values were instead assumed: 0.05 (3-5 GeV/c), 0.03 (5-8 GeV/c), 0.02 (8-24 GeV/c), on the basis of previous ALICE measurements in p-Pb collisions at 5 TeV \cite{ALICEv2ppb}. The difference of the fit observables with respect to the standard fits is taken as uncertainty. Due to its peculiarity, this systematic uncertainty is summed in quadrature with the others to obtain the total uncertainty, but is also shown separately in the figures.
+%\item In addition, for all the fit observables, an additional fit variation is performed assuming, instead of a flat baseline, a v$_{2\Delta}$-like modulation, with the following v$_2$ values for the associated tracks (assuming $v_{2\Delta} = v_2({\rm h}) \cdot v_2({\rm D})$: 0.04 (0.3-1 GeV/c), 0.06 ($>$0.3 GeV/c), 0.08 (1-2 GeV/c), 0.09 ($>$1 GeV/c, 2-3 GeV/c), 0.1 ($>$3 GeV/c), on the basis of ATLAS preliminary results for heavy-flavour muons at 8 TeV; for the D-meson triggers the following v$_2$ values were instead assumed: 0.05 (3-5 GeV/c), 0.03 (5-8 GeV/c), 0.02 (8-24 GeV/c), on the basis of previous ALICE measurements in p-Pb collisions at 5 TeV \cite{ALICEv2ppb}. The difference of the fit observables with respect to the standard fits is taken as uncertainty. Due to its peculiarity, this systematic uncertainty is summed in quadrature with the others to obtain the total uncertainty, but is also shown separately in the figures.
 \end{itemize}
 
 \begin{equation}
-\sigma^{syst} = \sqrt{\left(Max\left(\Delta par^{ped.mode},\Delta par^{\Delta\varphi point}\right)\right)^{2} + (\sigma_{Syst}^{corr})^{2}}
+\sigma^{syst} = \sqrt{\left(Max\left(\Delta par^{ped.mode,fit funct.},\Delta par^{\Delta\varphi point}\right)\right)^{2} + (\sigma_{Syst}^{corr})^{2}}
 \end{equation}
 
-\textbf{NOTE: THE SYSTEMATIC BOXES IN ALL THE FIT OBSERVABLES FOR THE pp AT 5 TeV SAMPLE WILL BE UPDATED AFTER THE SYSTEMATICS EVALUATION, HENCE THEY ARE NOT FINAL.}
-
-\subsubsection{Results for near-side yield and width, away-side yield and width, and baseline}
-(\textbf{TO BE UPDATED. ANYWAY, THE RESULTS OF THE FIT ARE PRESENTED IN THE COMPARISON FIGURES, SO ALL THE INFORMATION IS ALREADY PRESENT.})
-Figures~\ref{fig:nearsideyieldAverage},~\ref{fig:nearsidesigmaAverage}, ~\ref{fig:awaysideyieldAverage},~\ref{fig:awaysidesigmaAverage} and~\ref{fig:baselineAverage} show the near-side associated yield, width (the sigma of the Gaussian part of the fit functions), away-side associated yield, width and the height of the baseline, for the average correlation distributions, in the kinematic ranges studied in the analysis, together with their statistical and systematic uncertainties. For each kinematic range, the correspondent plot showing the systematic uncertainty of the considered observable from the variation of the fit procedure is reported as well (which is the full systematic uncertainty for the widths).
-%Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTotalUnc},~\ref{fig:ASsigmaTotalUnc} and~\ref{fig:baselineTotalUnc} show the full systematic uncertainties for near side yield and width, away side yield and width, and baseline, with the breakdown of fit variation, v$_2\Delta$ and $\Delta\varphi$ correlated systematic uncertainties.
-
-\begin{comment}
-\begin{figure}[!htbp]
-\centering
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSYield_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSYield_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSYield_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSYield_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSYield_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad1to99.png} \\
-%\caption{Top panels: near side yield $\pt$(D) trend for the D-meson average, extracted from fit to the azimuthal correlation distributions, for all the analyzed kinematic ranges of associated track $\pt$. Bottom panels: for each kinematic region the systematic uncertainties coming from the variation of the fit procedure are shown.}
-\label{fig:nearsideyieldAverage}
-\end{figure}
+\subsection{Results for near-side yield and width, away-side yield and width, and baseline}
+Figures~\ref{fig:NSyield},~\ref{fig:NSsigma},~\ref{fig:ASyield},~\ref{fig:ASsigma} and~\ref{fig:basel} show the near-side associated yield, width (the sigma of the Gaussian part of the fit functions), away-side associated yield, width and the height of the baseline, for the average correlation distributions, in the kinematic ranges studied in the analysis, together with their statistical and systematic uncertainties. For each kinematic range, the correspondent plot showing the systematic uncertainty of the considered observable from the variation of the fit procedure is reported as well (which is the full systematic uncertainty for the widths).
 
 \begin{figure}[!htbp]
 \centering
-
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendNSSigma_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendNSSigma_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendNSSigma_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendNSSigma_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendNSSigma_pthad2dotto3dot.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSYield_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSYield_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSYield_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSYield_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSYield_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of near-side yield, for the various associated track $\pt$ ranges, with statistical and systematic unceratinties. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:NSyield}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSSigma_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSSigma_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSSigma_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSSigma_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesNSSigma_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSSigma_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSSigma_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSSigma_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSSigma_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSSigma_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSSigma_pthad1to99.png} \\
-\caption{Top panels: near side width $\pt$(D) trend for the D-meson average, extracted from fit to the azimuthal correlation distributions, for all the analyzed kinematic ranges of associated track $\pt$. Bottom panels:  for each kinematic region the systematic uncertainties coming from the variation of the fit procedure are shown.}
-\label{fig:nearsidesigmaAverage}
-\end{figure}
-
-\begin{figure}[!htbp]
-\centering
-
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASYield_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASYield_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASYield_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASYield_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASYield_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASYield_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASYield_pthad2dotto3dot.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of near-side width, for the various associated track $\pt$ ranges, with statistical and systematic unceratinties. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:NSwidth}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASYield_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASYield_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASYield_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASYield_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASYield_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad1to99.png} \\
-\caption{Top panels: away side yield $\pt$(D) trend for the D-meson average, extracted from fit to the azimuthal correlation distributions, for all the analyzed kinematic ranges of associated track $\pt$. Bottom panels: for each kinematic region the systematic uncertainties coming from the variation of the fit procedure are shown.}
-\label{fig:awaysideyieldAverage}
-\end{figure}
-
-\begin{figure}[!htbp]
-\centering
-
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASSigma_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASSigma_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASSigma_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASSigma_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendASSigma_pthad2dotto3dot.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASYield_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASYield_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASYield_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASYield_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASYield_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of away-side yield, for the various associated track $\pt$ ranges, with statistical and systematic unceratinties. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:ASyield}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASSigma_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASSigma_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASSigma_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASSigma_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesASSigma_pthad2dotto3dot.png}}
-
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad1to99.png} \\
-\caption{Top panels: away side width $\pt$(D) trend for the D-meson average, extracted from fit to the azimuthal correlation distributions, for all the analyzed kinematic ranges of associated track $\pt$. Bottom panels: for each kinematic region the systematic uncertainties coming from the variation of the fit procedure are shown.}
-\label{fig:awaysidesigmaAverage}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of away-side width, for the various associated track $\pt$ ranges, with statistical and systematic unceratinties. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:ASwidth}
 \end{figure}
+\begin{figure}[!htbp]
+\centering
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendPedestal_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendPedestal_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendPedestal_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendPedestal_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendPedestal_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of baseline, for the various associated track $\pt$ ranges, with statistical and systematic unceratinties. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:basel}
+\end{figure}
+
+\clearpage
+
+Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTotalUnc},~\ref{fig:ASsigmaTotalUnc} show the systematic uncertainties for near side yield and width, away side yield and width due to the alternate fit approaches, with the breakdown for each of the contributions. The green line is the RMS of the first three kind of variations, the black the envelope between this RMS and fourth kind of variations (baseline shifted by 1$\sigma$ stat) - see the previous section for details.
 
 \begin{figure}[!htbp]
 \centering
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendPedestal_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendPedestal_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendPedestal_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendPedestal_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendPedestal_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendPedestal_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/CanvasFinalTrendPedestal_pthad2dotto3dot.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of uncertainties from fit variations for near-side yield, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:NSyield}
 \end{figure}
+\begin{figure}[!htbp]
+\centering
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of uncertainties from fit variations for near-side width, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:NSwidth}
+\end{figure}
+\begin{figure}[!htbp]
+\centering
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of uncertainties from fit variations for away-side yield, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:ASyield}
+\end{figure}
+\begin{figure}[!htbp]
+\centering
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of uncertainties from fit variations for away-side width, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:ASwidth}
+\end{figure}
+
+\clearpage
+
+Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTotalUnc},~\ref{fig:ASsigmaTotalUnc} and~\ref{fig:baselineTotalUnc} show the full systematic uncertainties for near side yield and width, away side yield and width, and baseline, with the breakdown of fit variation and $\Delta\varphi$ correlated systematic uncertainties.
 
 \begin{figure}[!htbp]
 \centering
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesPedestal_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesPedestal_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesPedestal_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesPedestal_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesPedestal_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesPedestal_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/BaselineSystematicSourcesPedestal_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendPedestal_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesPedestal_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendPedestal_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesPedestal_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendPedestal_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesPedestal_pthad1to99.png} \\
-\caption{Top panels: baseline height trend for the D-meson average, extracted from fit to the azimuthal correlation distributions, for all the analyzed kinematic ranges of associated track $\pt$. Bottom panels: for each kinematic region the systematic uncertainties coming from the variation of the fit procedure are shown.}
-\label{fig:baselineAverage}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of total systematic uncertainties for near-side yield, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:NSyield}
 \end{figure}
-
 \begin{figure}[!htbp]
 \centering
-
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSYield_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSYield_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSYield_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSYield_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSYield_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad1to99.png} \\
-\caption{Total systematic uncertainty, and its components, for near-side yields in the different kinematic ranges analyzed}
-\label{fig:NSyieldTotalUnc}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of total systematic uncertainties for near-side width, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:NSwidth}
 \end{figure}
-
 \begin{figure}[!htbp]
 \centering
-
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSSigma_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSSigma_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSSigma_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSSigma_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesNSSigma_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad1to99.png} \\
-\caption{Total systematic uncertainty, and its components, for near-side sigma in the different kinematic ranges analyzed}
-\label{fig:NSsigmaTotalUnc}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of total systematic uncertainties for away-side yield, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:ASyield}
 \end{figure}
-
 \begin{figure}[!htbp]
 \centering
-
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASYield_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASYield_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASYield_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASYield_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASYield_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad1to99.png} \\
-\caption{Total systematic uncertainty, and its components, for away-side yields in the different kinematic ranges analyzed}
-\label{fig:ASyieldTotalUnc}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of total systematic uncertainties for away-side width, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:ASwidth}
 \end{figure}
-
 \begin{figure}[!htbp]
 \centering
-
-%Marianna
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASSigma_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASSigma_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASSigma_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASSigma_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesASSigma_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendNSYield_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesNSYield_pthad1to99.png} \\
-\caption{Total systematic uncertainty, and its components, for away-side sigma in the different kinematic ranges analyzed}
-\label{fig:ASsigmaTotalUnc}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad03to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad03to1.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad1to99.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad1to2.png}}
+{\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad2to3.png}}
+\caption{D-meson $\pt$ trend of total systematic uncertainties for baseline, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
+\label{fig:basel}
 \end{figure}
 
-
-\begin{figure}[!htbp]
-\centering
-%Marianna
-\centering
-%Pt>0.3
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesPedestal_pthaddot3to99dot.png}}
-%Pt>1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesPedestal_pthad1dotto99dot.png}}
-%Pt>2.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad2dotto99dot.png}}
-%Pt>3.0
-%{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad3dotto99dot.png}}
-%Pt>0.3-1.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesPedestal_pthaddot3to1dot.png}}
-%Pt>1.0-2.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesPedestal_pthad1dotto2dot.png}}
-%Pt>2.0-3.0
-{\includegraphics[width=0.49\linewidth, height=0.33\linewidth]{figures/Fits/TotalSystematicSourcesPedestal_pthad2dotto3dot.png}}
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendPedestal_pthad03to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesPedestal_pthad03to99.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendPedestal_pthad03to1.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesPedestal_pthad03to1.png} \\
-%\includegraphics[width=.49\linewidth]{figures/CanvasFinalTrendPedestal_pthad1to99.png}
-%\includegraphics[width=.49\linewidth]{figures/BaselineSystematicSourcesPedestal_pthad1to99.png} \\
-\caption{Total systematic uncertainty, and its components, for baseline heights in the different kinematic ranges analyzed.}
-\label{fig:baselineTotalUnc}
-\end{figure}
-
-\end{comment}
+\subsection{Final plots and comparisons}
 
 \subsubsection{Comparisons of pp and p--Pb at 5 TeV}
 Figure~\ref{fig:pp-pPb} (two pages) shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for 2017 pp and 2016 p--Pb for all the kinematic ranges of trigger and associated particles $p_\mathrm{T}$. Overall, compatibility within uncertainties between the two collision systems is found for all the common kinematic ranges analyzed, and a similar evolution of the correlation pattern with transverse momentum holds for the two systems. Focusing on the peak regions, while one can appreciate a full near-side compatibility, for some kinematic regions the away-side region seems to be enhanced in p--Pb with respect to pp. As it could be already noticed from the comparison of the distributions, near-side observables are fully consistent. For the away-side region, instead, the peak widths are roughly compatible (wichin rather large uncertainties), while a hint of larger yields in p--Pb can be observed, especially from 5 to 16 $\gevc$ for the D-meson $\pt$, generally in all the associated track $\pt$ regions. In Figs.~\ref{fig:pp-pPb_FitNS},\ref{fig:pp-pPb_FitAs} the comparison of the observables extracted from the fits (near-side yield and width) is also presented.
@@ -704,12 +561,12 @@ Figure~\ref{fig:pp-pPb} (two pages) shows the average of $\Dzero$, $\Dplus$ and 
 \begin{figure}
 \centering
 %Marianna
-\includegraphics[width=1.3\textwidth, angle=270]{figures/CfrPPandModels/plotComparison_WeightedAverage_pp_pPb_UniqueCanvas_Style1_1.png}
+\includegraphics[width=1.3\textwidth,angle=270]{figures/CfrPPandModels/plotComparison_WeightedAverage_pp_pPb_UniqueCanvas_Style1_1.png}
 \end{figure}
 \begin{figure}
 \centering
 %Marianna
-\includegraphics[width=1.3\textwidth, angle=270]{figures/CfrPPandModels/plotComparison_WeightedAverage_pp_pPb_UniqueCanvas_Style1_1.png} \\
+\includegraphics[width=1.3\textwidth,angle=270]{figures/CfrPPandModels/plotComparison_WeightedAverage_pp_pPb_UniqueCanvas_Style1_2.png}
 \caption{Average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations in pp (blue) and p-Pb (red) in all the kinematic ranges of trigger and associated particles.}
 \label{fig:pp-pPb}
 \end{figure}
@@ -732,14 +589,12 @@ Figure~\ref{fig:pp-pPb} (two pages) shows the average of $\Dzero$, $\Dplus$ and 
 
 
 \subsubsection{Comparisons of pp at 5, 7 and 13 TeV}
-Figure~\ref{fig:Allpp} shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for pp at 5 TeV compared with pp at 7 TeV and 13 TeV for all the common kinematic ranges of trigger and associated particles $p_\mathrm{T}$ analysed. The data distribution of pp at 5 TeV have much better uncertainties than 7 TeV and also quite better than 13 TeV. Compatibility within uncertainties between the three energy systems is found for all the common kinematic ranges analyzed. In Figs.~\ref{fig:AllppFit1} and ~\ref{fig:AllppFit2}, the comparison of the observables extracted from the fits (near-side yield and width for first page, away-side yield and width for second page) is also presented. The near-side observables do not show difference above the uncertainties, which are not small (especially for past results), not allowing to quantitatively appreciate any energy dependence of the yields, expected to be of the order of 8-10\% for 5 vs 7 TeV and of 15-20\% for 5 vs 13 TeV results from Pythia6 and Pythia8 simulations. Qualitatively, anyway, it can be observed that yield values at 13 TeV are generally larger than yields at 5 TeV, following the expectations of some mild energy scaling of this observable. Nothing can be said, instead, for the away-side observables, where the precision is not enough to draw any conclusion, even qualitatively - also because model expectations for away-side observables at different energies predict much similar results at the three energies, much smaller than the current uncertainties. Indeed, away-side results at 7 and 13 TeV were not approved at all, in the past).
+Figure~\ref{fig:Allpp} shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for pp at 5 TeV compared with pp at 7 TeV and 13 TeV for all the common kinematic ranges of trigger and associated particles $p_\mathrm{T}$ analysed. The data distribution of pp at 5 TeV have much better uncertainties than 7 TeV and also quite better than 13 TeV. Compatibility within uncertainties between the three energy systems is found for all the common kinematic ranges analyzed. In Figs.~\ref{fig:AllppFit1} and ~\ref{fig:AllppFit2}, the comparison of the observables extracted from the fits (near-side yield and width for first page, away-side yield and width for second page) is also presented. The near-side observables do not show difference above the uncertainties, which are not small (especially for past results), not allowing to quantitatively appreciate any energy dependence of the yields, expected to be of the order of 5-6\% for 5 vs 7 TeV and of 10-12\% for 5 vs 13 TeV results from Pythia8 and POWHEG$+$PYTHIA simulations. Qualitatively, anyway, it can be observed that yield values at 13 TeV are generally larger than yields at 5 TeV, following the expectations of some mild energy scaling of this observable. Nothing can be said, instead, for the away-side observables, where the precision is not enough to draw any conclusion, even qualitatively - also because model expectations for away-side observables at different energies predict much similar results at the three energies, much smaller than the current uncertainties. Indeed, away-side results at 7 and 13 TeV were not approved in the past (and this comparison plot is for internal use only, its approval will not be requested).
 
 \begin{figure}
 \centering
 %Marianna
 \includegraphics[width=1.1\textwidth, angle=270]{figures/ComparisonToOtherpp/plotComparison_WeightedAverage_pp_vsEnergies_UniqueCanvas_Style1.png}
-%\includegraphics[width=.45\linewidth]{figures/ComparisonTopPb/plotComparison_WeightedAverage_pp_pPb_UniqueCanvas_Style1_1.png} \\
-
 \caption{Average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations in pp at 5 (blue), 7 (red) and 13 (green) TeV in all the common kinematic ranges of trigger and associated particles.}
 \label{fig:Allpp}
 \end{figure}
@@ -757,17 +612,16 @@ Figure~\ref{fig:Allpp} shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azim
 \centering
 \includegraphics[width=.96\textwidth]{figures/ComparisonToOtherpp/CompareFitResults_DiffppEnergies_AwaySide.png}
 %\includegraphics[width=.95\linewidth]{figures/ComparisonTopPb/CompareFitResults_ppVspPb_5TeV_AwaySide_2.png}
-\caption{Away-side yield and width for the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations in pp at 5 (blue), 7 (red) and 13 (green) TeV in all the common kinematic regions of trigger and associated track.}
+\caption{Away-side yield and width for the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations in pp at 5 (blue), 7 (red) and 13 (green) TeV in all the common kinematic regions of trigger and associated track. Note: this is only internal, not for approval.}
 \label{fig:AllppFit2}
 \end{figure}
 
 \subsubsection{Comparisons of pp at 5 TeV and model predictions}
-Figure \ref{fig:pp-models} (two pages) shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for pp for several ranges of trigger and associated $p_\mathrm{T}$, compared to different Pythia6 tunes (Perugia 0, 2010, 2011), Pythia 8 (tune 4C) and POWHEG+PYTHIA at the same collision energy. A substantial agreement in the overall momentum evolution of the correlation pattern is observed within uncertainties for what concerns the near-side region, apart from very high $\pt$ of the D-meson, where the peak seems to be slightly underestimated, at least by PYTHIA predictions. For the away-side region, the models themselves differentiate in predicting the height of the peak, and generally the strenght of the peak overestimate the data measurements, especially for the older Perugia tunes (PYTHIA6-Perugia0 and PYTHIA6-Perugia2010). In Figs.~\ref{fig:pp-modelsfitns} and ~\ref{fig:pp-modelsfitas} (two pages for each) the comparison of the extracted physical observables (near-side and away-side yield, width and baseline height) is presented.
+Figure \ref{fig:pp-models} (two pages) shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for pp for several ranges of trigger and associated $p_\mathrm{T}$, compared to different Pythia6 tunes (Perugia 0, 2010, 2011), Pythia 8 (tune 4C) and POWHEG+PYTHIA at the same collision energy. A substantial agreement in the overall momentum evolution of the correlation pattern is observed within uncertainties for what concerns the near-side region, apart from very high $\pt$ of the D-meson, where the peak seems to be slightly underestimated, at least by PYTHIA predictions. For the away-side region, the models themselves differentiate in predicting the height of the peak, and generally the strength of the peak overestimate the data measurements, especially for the older Perugia tunes (PYTHIA6-Perugia0 and PYTHIA6-Perugia2010). In Figs.~\ref{fig:pp-modelsfitns} and ~\ref{fig:pp-modelsfitas} (two pages for each) the comparison of the extracted physical observables (near-side and away-side yield, width and baseline height) is presented.
 For the near-side yields, POWHEG tends to predict larger values than PYTHIA6,8, in all associated track $\pt$ regions. Data results seem to behave in-between of the two predictions, apart from $16 < p_\text{T}({\rm D}) < 24 \gevc$ range, where excluding the lowest associated $\pt$ range, data are better described by POWHEG.
 For the near-side width, POWHEG also tends to predict wider peaks, in this case generally overpredicting the observed values, which are better matched by PYTHIA predictions (though no model can be ruled out with current uncertainties).
-Focusing on the away-side region, POWHEG expectation foresee smaller and narrower peaks, with respect to all PYTHIA6,8 predictions, which is confirmed by data, especially for the yields, and in the intermediate D-meson $\pt$ region..
-All the models, except possibly PYTHIA6-Perugia0, predict similar baseline values, which generally describe well the data measurements.
-
+Focusing on the away-side region, POWHEG expectation foresee smaller peaks, with respect to all Pythia6 predictions, which is confirmed by data, especially for the yields, and in the intermediate D-meson $\pt$ region (while Pythia6 predictions overestimate the data especially at mid-high $\pt$). Pythia8 predictions are in-between POWHEG and Pythia6. The values of the widths show a reversed model hierarchy with respect to the near-dire predictions, but with small differences, and all models can generally reproduce data.
+All the models, except possibly PYTHIA6-Perugia0 (which is the oldest), predict similar baseline values, which generally describe well the data measurements.
 
 \begin{figure}[h]
 \centering
@@ -806,9 +660,6 @@ All the models, except possibly PYTHIA6-Perugia0, predict similar baseline value
 
 \clearpage
 
-
-
-
 %\subsection{Comparison of 2016 p-Pb and 2013 p-Pb results}
 %\input{./Sections/5Results/Cfr2016vs2013.tex}
 
@@ -817,17 +668,17 @@ All the models, except possibly PYTHIA6-Perugia0, predict similar baseline value
 
 %\subsection{Comparison of 2016 p-Pb and model expectations}
 %\input{./Sections/5Results/Cfr2016vsModels.tex}
-\begin{comment}
+
 \subsection{Planned results for HP approvals}
 We are planning to approve the following results, all shown in the previous figures (the final graphical style of the plots is still to be finalized):
 \begin{itemize}
-\item Average D-h correlation distributions, in exemplary pT range
-\item Fit of D-h correlation distributions, in exemplary pT range
-\item $p_\text{T}$(D), $p_\text{T}$(assoc) trend of NS yield, NS width, AS yield, AS sigma
-\item Comparison of correlation distributions with expectations from models (PYTHIA6, PYTHIA8, if in time POWHEG, EPOS)
-\item Comparison of fit observables with expectations from models (PYTHIA6, PYTHIA8, if in time POWHEG, EPOS)
-\item Comparison of correlation distributions with pp 2010 results
-\item Comparison of fit observables with pp 2010 results
+\item Average D-h correlation distributions, multipanels and in exemplary pT range
+\item Comparison of correlation distributions with expectations from models
+\item Comparison of fit observables with expectations from models (NS and AS)
+\item Comparison of correlation distributions with p--Pb results
+\item Comparison of fit observables with p--Pb results (NS and AS)
+\item Comparison of correlation distributions with p--Pb results
+\item Comparison of fit observables with p--Pb results (NS only)
 \end{itemize}
-\end{comment}
+
 \clearpage
