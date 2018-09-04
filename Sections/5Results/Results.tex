@@ -301,7 +301,7 @@ As it can be observed in Figures~\ref{fig:StdFit1},~\ref{fig:StdFit2},~\ref{fig:
 
 To dig into this issue, an alternate fitting function was adopted for the near-side peak fitting, i.e. the generalized Gaussian function \ref{fig:GenGauss}, with PDF:
 \begin{equation}
-f(\Delta\varphi) = frac{\beta}{2\alpha\Gamma(1/\beta)}e^{-(|x-\mu|/\alpha)^\beta}
+f(\Delta\varphi) = \frac{\beta}{2\alpha\Gamma(1/\beta)}\cdot e^{-(|x-\mu|/\alpha)^\beta}
 \end{equation}
 and having as variance $\frac{\alpha\Gamma(3/\beta)}{\Gamma(1/\beta)}$.
 The square root of the variance was used as near-side width fit observable instead of the Gaussian $\sigma$, together with the integral of the fitting function, which defines the near-side yield.
@@ -409,7 +409,7 @@ Figures~\ref{fig:NSyield},~\ref{fig:NSsigma},~\ref{fig:ASyield},~\ref{fig:ASsigm
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSYield_pthad1to99.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSYield_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSYield_pthad2to3.png}}
-\caption{D-meson $\pt$ trend of near-side yield, for the various associated track $\pt$ ranges, with statistical and systematic unceratinties. Note: do not consider the first bin of each panel (excluded from the results).}
+\caption{D-meson $\pt$ trend of near-side yield, for the various associated track $\pt$ ranges, with statistical and systematic uncertainties. Note: do not consider the first bin of each panel (excluded from the results).}
 \label{fig:NSyield}
 \end{figure}
 \begin{figure}[!htbp]
@@ -420,7 +420,7 @@ Figures~\ref{fig:NSyield},~\ref{fig:NSsigma},~\ref{fig:ASyield},~\ref{fig:ASsigm
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendNSSigma_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of near-side width, for the various associated track $\pt$ ranges, with statistical and systematic unceratinties. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:NSwidth}
+\label{fig:NSsigma}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -440,7 +440,7 @@ Figures~\ref{fig:NSyield},~\ref{fig:NSsigma},~\ref{fig:ASyield},~\ref{fig:ASsigm
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/CanvasFinalTrendASSigma_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of away-side width, for the various associated track $\pt$ ranges, with statistical and systematic unceratinties. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:ASwidth}
+\label{fig:ASsigma}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -465,7 +465,7 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSYield_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of uncertainties from fit variations for near-side yield, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:NSyield}
+\label{fig:NSyieldTotalUnc}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -475,7 +475,7 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesNSSigma_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of uncertainties from fit variations for near-side width, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:NSwidth}
+\label{fig:NSsigmaTotalUnc}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -485,7 +485,7 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASYield_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of uncertainties from fit variations for away-side yield, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:ASyield}
+\label{fig:ASyieldTotalUnc}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -495,7 +495,7 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/BaselineSystematicSourcesASSigma_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of uncertainties from fit variations for away-side width, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:ASwidth}
+\label{fig:ASsigmaTotalUnc}
 \end{figure}
 
 \clearpage
@@ -510,7 +510,7 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSYield_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of total systematic uncertainties for near-side yield, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:NSyield}
+\label{fig:NSyieldTotalUnc}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -520,7 +520,7 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesNSSigma_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of total systematic uncertainties for near-side width, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:NSwidth}
+\label{fig:NSsigmaTotalUnc}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -530,7 +530,7 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASYield_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of total systematic uncertainties for away-side yield, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:ASyield}
+\label{fig:ASyieldTotalUnc}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -540,7 +540,7 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesASSigma_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of total systematic uncertainties for away-side width, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:ASwidth}
+\label{fig:ASsigmaTotalUnc}
 \end{figure}
 \begin{figure}[!htbp]
 \centering
@@ -550,13 +550,13 @@ Figures~\ref{fig:NSyieldTotalUnc},~\ref{fig:NSsigmaTotalUnc},~\ref{fig:ASyieldTo
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad1to2.png}}
 {\includegraphics[width=0.48\linewidth, height=0.33\linewidth]{figures/FitOutput/TotalSystematicSourcesPedestal_pthad2to3.png}}
 \caption{D-meson $\pt$ trend of total systematic uncertainties for baseline, for the various associated track $\pt$ ranges. Note: do not consider the first bin of each panel (excluded from the results).}
-\label{fig:basel}
+\label{fig:baselineTotalUnc}
 \end{figure}
 
 \subsection{Final plots and comparisons}
 
 \subsubsection{Comparisons of pp and p--Pb at 5 TeV}
-Figure~\ref{fig:pp-pPb} (two pages) shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for 2017 pp and 2016 p--Pb for all the kinematic ranges of trigger and associated particles $p_\mathrm{T}$. Overall, compatibility within uncertainties between the two collision systems is found for all the common kinematic ranges analyzed, and a similar evolution of the correlation pattern with transverse momentum holds for the two systems. Focusing on the peak regions, while one can appreciate a full near-side compatibility, for some kinematic regions the away-side region seems to be enhanced in p--Pb with respect to pp. As it could be already noticed from the comparison of the distributions, near-side observables are fully consistent. For the away-side region, instead, the peak widths are roughly compatible (wichin rather large uncertainties), while a hint of larger yields in p--Pb can be observed, especially from 5 to 16 $\gevc$ for the D-meson $\pt$, generally in all the associated track $\pt$ regions. In Figs.~\ref{fig:pp-pPb_FitNS},\ref{fig:pp-pPb_FitAs} the comparison of the observables extracted from the fits (near-side yield and width) is also presented.
+Figure~\ref{fig:pp-pPb} (two pages) shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for 2017 pp and 2016 p--Pb for all the kinematic ranges of trigger and associated particles $p_\mathrm{T}$. Overall, compatibility within uncertainties between the two collision systems is found for all the common kinematic ranges analyzed, and a similar evolution of the correlation pattern with transverse momentum holds for the two systems. Focusing on the peak regions, while one can appreciate a full near-side compatibility, for some kinematic regions the away-side region seems to be enhanced in p--Pb with respect to pp. As it could be already noticed from the comparison of the distributions, near-side observables are fully consistent. For the away-side region, instead, the peak widths are roughly compatible (wichin rather large uncertainties), while a hint of larger yields in p--Pb can be observed, especially from 5 to 16 $\gevc$ for the D-meson $\pt$, generally in all the associated track $\pt$ regions. In Figs.~\ref{fig:pp-pPb_FitNS},\ref{fig:pp-pPb_FitAS} the comparison of the observables extracted from the fits (near-side yield and width) is also presented.
 
 \begin{figure}
 \centering
@@ -589,7 +589,13 @@ Figure~\ref{fig:pp-pPb} (two pages) shows the average of $\Dzero$, $\Dplus$ and 
 
 
 \subsubsection{Comparisons of pp at 5, 7 and 13 TeV}
-Figure~\ref{fig:Allpp} shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for pp at 5 TeV compared with pp at 7 TeV and 13 TeV for all the common kinematic ranges of trigger and associated particles $p_\mathrm{T}$ analysed. The data distribution of pp at 5 TeV have much better uncertainties than 7 TeV and also quite better than 13 TeV. Compatibility within uncertainties between the three energy systems is found for all the common kinematic ranges analyzed. In Figs.~\ref{fig:AllppFit1} and ~\ref{fig:AllppFit2}, the comparison of the observables extracted from the fits (near-side yield and width for first page, away-side yield and width for second page) is also presented. The near-side observables do not show difference above the uncertainties, which are not small (especially for past results), not allowing to quantitatively appreciate any energy dependence of the yields, expected to be of the order of 5-6\% for 5 vs 7 TeV and of 10-12\% for 5 vs 13 TeV results from Pythia8 and POWHEG$+$PYTHIA simulations. Qualitatively, anyway, it can be observed that yield values at 13 TeV are generally larger than yields at 5 TeV, following the expectations of some mild energy scaling of this observable. Nothing can be said, instead, for the away-side observables, where the precision is not enough to draw any conclusion, even qualitatively - also because model expectations for away-side observables at different energies predict much similar results at the three energies, much smaller than the current uncertainties. Indeed, away-side results at 7 and 13 TeV were not approved in the past (and this comparison plot is for internal use only, its approval will not be requested).
+Figure~\ref{fig:Allpp} shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for pp at 5 TeV compared with pp at 7 TeV and 13 TeV for all the common kinematic ranges of trigger and associated particles $p_\mathrm{T}$ analysed. The data distribution of pp at 5 TeV have much better uncertainties than 7 TeV and also quite better than 13 TeV. Compatibility within uncertainties between the three energy systems is found for all the common kinematic ranges analyzed. 
+
+In Figs.~\ref{fig:AllppFit1} and ~\ref{fig:AllppFit2}, the comparison of the observables extracted from the fits (near-side yield and width for first page, away-side yield and width for second page) is also presented. 
+
+The near-side observables do not show difference above the uncertainties, which are not small (especially for past results), not allowing to quantitatively appreciate any energy dependence of the yields, expected to be of the order of 5-6\% for 5 vs 7 TeV and of 10-12\% for 5 vs 13 TeV results from Pythia8 and POWHEG$+$PYTHIA simulations. Qualitatively, anyway, it can be observed that yield values at 13 TeV are generally larger than yields at 5 TeV, following the expectations of some mild energy scaling of this observable.
+
+Nothing can be said, instead, for the away-side observables, where the precision is not enough to draw any conclusion, even qualitatively - also because model expectations for away-side observables at different energies predict much similar results at the three energies, much smaller than the current uncertainties. Indeed, away-side results at 7 and 13 TeV were not approved in the past (and this comparison plot is for internal use only, its approval will not be requested).
 
 \begin{figure}
 \centering
@@ -617,9 +623,13 @@ Figure~\ref{fig:Allpp} shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azim
 \end{figure}
 
 \subsubsection{Comparisons of pp at 5 TeV and model predictions}
-Figure \ref{fig:pp-models} (two pages) shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for pp for several ranges of trigger and associated $p_\mathrm{T}$, compared to different Pythia6 tunes (Perugia 0, 2010, 2011), Pythia 8 (tune 4C) and POWHEG+PYTHIA at the same collision energy. A substantial agreement in the overall momentum evolution of the correlation pattern is observed within uncertainties for what concerns the near-side region, apart from very high $\pt$ of the D-meson, where the peak seems to be slightly underestimated, at least by PYTHIA predictions. For the away-side region, the models themselves differentiate in predicting the height of the peak, and generally the strength of the peak overestimate the data measurements, especially for the older Perugia tunes (PYTHIA6-Perugia0 and PYTHIA6-Perugia2010). In Figs.~\ref{fig:pp-modelsfitns} and ~\ref{fig:pp-modelsfitas} (two pages for each) the comparison of the extracted physical observables (near-side and away-side yield, width and baseline height) is presented.
+Figure \ref{fig:pp-models} (two pages) shows the average of $\Dzero$, $\Dplus$ and $\Dstar$ azimuthal correlations for pp for several ranges of trigger and associated $p_\mathrm{T}$, compared to different Pythia6 tunes (Perugia 0, 2010, 2011), Pythia 8 (tune 4C) and POWHEG+PYTHIA at the same collision energy. A substantial agreement in the overall momentum evolution of the correlation pattern is observed within uncertainties for what concerns the near-side region, apart from very high $\pt$ of the D-meson, where the peak seems to be slightly underestimated, at least by PYTHIA predictions. For the away-side region, the models themselves differentiate in predicting the height of the peak, and generally the strength of the peak overestimate the data measurements, especially for the older Perugia tunes (PYTHIA6-Perugia0 and PYTHIA6-Perugia2010).
+
+In Figs.~\ref{fig:pp-modelsfitns} and ~\ref{fig:pp-modelsfitas} (two pages for each) the comparison of the extracted physical observables (near-side and away-side yield, width and baseline height) is presented.
+
 For the near-side yields, POWHEG tends to predict larger values than PYTHIA6,8, in all associated track $\pt$ regions. Data results seem to behave in-between of the two predictions, apart from $16 < p_\text{T}({\rm D}) < 24 \gevc$ range, where excluding the lowest associated $\pt$ range, data are better described by POWHEG.
 For the near-side width, POWHEG also tends to predict wider peaks, in this case generally overpredicting the observed values, which are better matched by PYTHIA predictions (though no model can be ruled out with current uncertainties).
+
 Focusing on the away-side region, POWHEG expectation foresee smaller peaks, with respect to all Pythia6 predictions, which is confirmed by data, especially for the yields, and in the intermediate D-meson $\pt$ region (while Pythia6 predictions overestimate the data especially at mid-high $\pt$). Pythia8 predictions are in-between POWHEG and Pythia6. The values of the widths show a reversed model hierarchy with respect to the near-dire predictions, but with small differences, and all models can generally reproduce data.
 All the models, except possibly PYTHIA6-Perugia0 (which is the oldest), predict similar baseline values, which generally describe well the data measurements.
 
